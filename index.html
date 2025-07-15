@@ -5,42 +5,55 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Бухгалтерское бюро №1</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
-  <header class="main-header">
-  <div class="container header-grid">
-    <div class="logo">ББ №1</div>
-    <nav class="nav">
-      <ul class="menu">
-        <li><a href="#about">О НАС</a></li>
-        <li><a href="#services">УСЛУГИ</a></li>
-        <li><a href="#reviews">ОТЗЫВЫ</a></li>
-        <li><a href="#franchise">ФРАНШИЗА</a></li>
-        <li><a href="#agents">Агентам</a></li>
-        <li><a href="#social">Соц. проекты</a></li>
-        <li><a href="#jobs">ВАКАНСИИ</a></li>
-        <li><a href="#contacts">КОНТАКТЫ</a></li>
-      </ul>
-    </nav>
-    <button class="burger" aria-label="Открыть меню">&#9776;</button>
-  </div>
-</header>
 
-  <section class="hero">
-  <div class="hero__overlay">
-    <div class="container hero__content">
-      <h1>Комплексное обслуживание вашего бизнеса</h1>
-      <p>
-        Доверьте часть своих дел профессионалам<br />
-        с многолетним и безупречным опытом работы
-      </p>
-      <a href="#consult" class="btn">Получить консультацию</a>
+  <header class="site-header">
+  <div class="container">
+    <div class="logo">
+      <a href="/">
+        <img src="./svg/logo.svg" alt="ББ№1" class="logo-svg" alt="Логотип"/>
+        </svg>
+      </a>
+    </div>
+
+    <div class="nav-icons-wrapper">
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="#about">О НАС</a></li>
+          <li><a href="#services">УСЛУГИ</a></li>
+          <li><a href="#reviews">ОТЗЫВЫ</a></li>
+          <li><a href="#franchise">ФРАНШИЗА</a></li>
+          <li><a href="#agents">АГЕНТАМ</a></li>
+          <li><a href="#social">СОЦ. ПРОЕКТЫ</a></li>
+          <li><a href="#jobs">ВАКАНСИИ</a></li>
+          <li><a href="#contacts">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-icons">
+        <img src="svg/envelope.svg" alt="Электронная почта" />
+        <img src="svg/phone.svg" alt="Телефоны" />
+        <!-- Бургер -->
+        <button class="burger" aria-label="Открыть меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </div>
-</section>
+  </header>
+
 
 </body>
 </html>
 
+<script>
+  const burger = document.querySelector('.burger');
+  const navWrap = document.querySelector('.nav-icons-wrapper');
+
+  burger.addEventListener('click', () => {
+    navWrap.classList.toggle('active');
+  });
+</script>
 

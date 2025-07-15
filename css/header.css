@@ -1,0 +1,148 @@
+.site-header {
+  background-color: #0A03AA;
+  color: white;
+  height: 36px;
+  padding: 10px 64px;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 36px;
+}
+
+.logo-svg {
+  height: 36px;
+  width: auto;
+  fill: white;
+}
+
+.nav-icons-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Навигация */
+.nav {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #ffdb59;
+}
+
+/* Иконки */
+.header-icons {
+  display: flex;
+  gap: 38px;
+}
+
+.header-icons img {
+  height: 24px;
+  width: auto;
+}
+
+/* ========== Бургер ========== */
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 30px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger span {
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  display: block;
+}
+
+/* ========== Адаптация: ≤ 1185px т.к меню перестает помещаться ========== */
+
+@media (max-width: 1185px) {
+
+  .site-header{
+    padding: 10px 26px;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav-icons-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .nav-icons-wrapper.active .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    top: calc(100% + 10px); /* отступ после хедера */
+    left: 0;
+    right: 0;
+    background-color: #0A03AA;
+    padding: 1rem 0;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header-icons {
+    justify-content: center;
+  }
+}
+
+/* ========== Адаптация: ≤ 480px ========== */
+
+@media (max-width: 480px) {
+  .logo-svg {
+    height: 32px;
+  }
+
+  .menu li a {
+    font-size: 0.9rem;
+  }
+
+  .header-icons img {
+    height: 20px;
+  }
+}
