@@ -1,12 +1,12 @@
 .site-header {
   background-color: #0A03AA;
   color: white;
-  height: 36px;
+  height: 56px;
   padding: 10px 64px;
   position: relative;
 }
 
-.container {
+.site-header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
