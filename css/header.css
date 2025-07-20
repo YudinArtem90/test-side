@@ -4,66 +4,70 @@
   height: 56px;
   padding: 10px 64px;
   position: relative;
+  z-index: 10;
 }
 
-.site-header-container {
+.site-header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 36px;
 }
 
-.logo-svg {
+.site-header__logo-image {
   height: 36px;
   width: auto;
-  fill: white;
 }
 
-.nav-icons-wrapper {
+.site-header__nav-icons {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-/* Навигация */
-.nav {
+.site-header__nav {
   display: flex;
 }
 
-.menu {
+.site-header__menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 35px;
   list-style: none;
-  margin: 0;
+  margin: 18px 31px;
   padding: 0;
+  font-family: Onest;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
-.menu li a {
+.site-header__menu li a {
   color: white;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s;
+  transition: color 0.3s ease;
 }
 
-.menu li a:hover {
+.site-header__menu li a:hover {
   color: #ffdb59;
 }
 
-/* Иконки */
-.header-icons {
+.site-header__icons {
   display: flex;
   gap: 38px;
+  align-items: center;
 }
 
-.header-icons img {
+.site-header__icons img {
   height: 24px;
   width: auto;
 }
 
-/* ========== Бургер ========== */
-
-.burger {
+/* ========== БУРГЕР ========== */
+.site-header__burger {
   display: none;
   flex-direction: column;
   justify-content: center;
@@ -75,74 +79,112 @@
   cursor: pointer;
 }
 
-.burger span {
+.site-header__burger span {
   height: 3px;
   width: 100%;
   background: white;
   border-radius: 2px;
   display: block;
+  transition: all 0.3s ease;
 }
 
-/* ========== Адаптация: ≤ 1185px т.к меню перестает помещаться ========== */
+/* Активация крестика */
+.site-header__burger.is-active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
 
-@media (max-width: 1185px) {
+.site-header__burger.is-active span:nth-child(2) {
+  opacity: 0;
+}
 
-  .site-header{
+.site-header__burger.is-active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.site-header__separator {
+    height: 1px;
+    width: calc(100% - 60px);
+    background-color: rgb(241 231 231);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    justify-self: anchor-center;
+    animation: fadeIn 0.3s ease forwards;
+    display: none;
+}
+
+.site-header__separator--visible {
+  display: block;
+}
+
+/* ========== АДАПТИВ ≤ 1185px ========== */
+@media (max-width: 1380px) {
+  .site-header {
     padding: 10px 26px;
   }
 
-  .burger {
+  .site-header__burger {
     display: flex;
   }
 
-  .nav {
+  .site-header__nav {
     display: none;
   }
 
-  .nav-icons-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
-  }
-
-  .nav-icons-wrapper.active .nav {
+  .site-header__nav-icons.active .site-header__nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     position: absolute;
-    top: calc(100% + 10px); /* отступ после хедера */
+    top: 100%;
     left: 0;
     right: 0;
     background-color: #0A03AA;
-    padding: 1rem 0;
+    animation: fadeIn 0.3s ease forwards;
   }
 
-  .menu {
-    flex-direction: column;
+  .site-header__menu {
+    flex-direction: row;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    gap: 22px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
   }
 
-  .header-icons {
+  .site-header__icons {
     justify-content: center;
+  }
+
+  body.no-scroll {
+    overflow: hidden;
   }
 }
 
-/* ========== Адаптация: ≤ 480px ========== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+/* ========== АДАПТИВ ≤ 480px ========== */
 @media (max-width: 480px) {
-  .logo-svg {
+  .site-header__logo-image {
     height: 32px;
   }
 
-  .menu li a {
+  .site-header__menu li a {
     font-size: 0.9rem;
   }
 
-  .header-icons img {
+  .site-header__icons img {
     height: 20px;
   }
 }

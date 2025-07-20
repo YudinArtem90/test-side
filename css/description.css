@@ -128,7 +128,7 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 292px;
+  width: 305px;
   height: 64px;
   border-radius: 20px;
   background: #0A03AA;
@@ -167,7 +167,7 @@
 
 @media (max-width: 720px) {
   .description__contact-button {
-    width: 248px;
+    width: 251px;
     height: 50px;
     padding: 15px 30px;
     border-radius: 16px;

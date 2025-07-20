@@ -10,41 +10,42 @@
 </head>
 <body>
 
-  <header class="site-header">
-  <div class="site-header-container">
-    <div class="logo">
-      <a href="/">
-        <img src="./svg/logo.svg" alt="ББ№1" class="logo-svg" alt="Логотип"/>
-        </svg>
-      </a>
-    </div>
-
-    <div class="nav-icons-wrapper">
-      <nav class="nav">
-        <ul class="menu">
-          <li><a href="#about">О НАС</a></li>
-          <li><a href="#services">УСЛУГИ</a></li>
-          <li><a href="#reviews">ОТЗЫВЫ</a></li>
-          <li><a href="#franchise">ФРАНШИЗА</a></li>
-          <li><a href="#agents">АГЕНТАМ</a></li>
-          <li><a href="#social">СОЦ. ПРОЕКТЫ</a></li>
-          <li><a href="#jobs">ВАКАНСИИ</a></li>
-          <li><a href="#contacts">КОНТАКТЫ</a></li>
-        </ul>
-      </nav>
-
-      <div class="header-icons">
-        <img src="svg/envelope.svg" alt="Электронная почта" />
-        <img src="svg/phone.svg" alt="Телефоны" />
-        <!-- Бургер -->
-        <button class="burger" aria-label="Открыть меню">
-          <span></span><span></span><span></span>
-        </button>
+   <header class="site-header">
+    <div class="site-header__container">
+      
+      <div class="site-header__logo">
+        <a href="/">
+          <img src="./svg/logo.svg" alt="ББ№1" class="site-header__logo-image" />
+        </a>
       </div>
-    </div>
-  </div>
-  </header>
 
+      <div class="site-header__nav-icons">
+        <nav class="site-header__nav">
+          <ul class="site-header__menu">
+            <li><a href="#about">О НАС</a></li>
+            <li><a href="#services">УСЛУГИ</a></li>
+            <li><a href="#reviews">ОТЗЫВЫ</a></li>
+            <li><a href="#franchise">ФРАНШИЗА</a></li>
+            <li><a href="#agents">АГЕНТАМ</a></li>
+            <li><a href="#social">СОЦ. ПРОЕКТЫ</a></li>
+            <li><a href="#jobs">ВАКАНСИИ</a></li>
+            <li><a href="#contacts">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
+
+        <div class="site-header__icons">
+          <img src="./svg/envelope.svg" alt="Электронная почта" />
+          <img src="./svg/phone.svg" alt="Телефоны" />
+
+          <!-- Бургер -->
+          <button class="site-header__burger" aria-label="Открыть меню">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <div class="site-header__separator"></div>
+    </div>
+  </header>
 
   <section class="description">
     <div class="description__content">
@@ -68,18 +69,11 @@
     </div>
   </section>
 
-
+<script src="./js/menu.js" defer></script>
 </body>
 </html>
 
 <script>
-  const burger = document.querySelector('.burger');
-  const navWrap = document.querySelector('.nav-icons-wrapper');
-
-  burger.addEventListener('click', () => {
-    navWrap.classList.toggle('active');
-  });
-
    document.addEventListener("DOMContentLoaded", () => {
       const section = document.querySelector('.description__content');
 
