@@ -67,13 +67,91 @@
         </a>
       </div>
     </section>
+
+   <section class="about">
+    <div class="about__container">
+
+      <div class="about__grid">
+
+        <!-- ВИДЕО -->
+        <div class="about__media about__media--video" data-video="video/about.mp4">
+          <div class="about__circle-decor"></div> 
+          <div class="about__media-inner">
+            <picture>
+              <source srcset="./image/about/about_video.webp" type="image/webp">
+              <img
+                src="./image/about/about_video.png"
+                alt="Кто мы видео"
+                class="about__media-thumb"
+                loading="lazy"
+              />
+            </picture>
+             <button class="about__media-play" aria-label="Смотреть видео">
+              <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 176 176" fill="none">
+                <circle cx="88" cy="88" r="87.5" fill="white" fill-opacity="0.47" stroke="white"/>
+                <path d="M59 155V28L154 86L59 155Z" fill="white" stroke="white"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- КАРТИНКА -->
+        <div class="about__media about__media--image">
+          <div class="about__circle-decor"></div>
+          <div class="about__media-inner">
+            <picture>
+              <source srcset="./image/about/our_team.webp" type="image/webp">
+              <img
+                src="./image/about/our_team.png"
+                alt="Наша команда"
+                class="about__media-thumb"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+
+        <!-- КТО МЫ -->
+        <div class="about__text about__text--who about__text--line-desktop">
+          <h3 class="about__title">Кто мы</h3>
+          <p class="about__paragraph">Бухгалтерское бюро №1 (ББ№1) — профессиональная команда с головным офисом в Тамбове. Обеспечиваем деятельность бизнеса. Оказываем бухгалтерские, юридические и консалтинговые услуги организациям и предпринимателям на всей территории России.</p>
+        </div>
+
+        <!-- ОПЫТ -->
+        <div class="about__text about__text--experience about__text--line-desktop">
+          <h3 class="about__title">Наш опыт</h3>
+          <p class="about__paragraph">Бухгалтерское бюро №1 успешно работает с 2005 года и занимает лидирующие позиции на рынке бухгалтерских услуг Тамбовской области.
+Наша команда накопила значительный практический опыт во всех сферах экономики и системах налогообложения.</p>
+        </div>
+
+        <!-- МИССИЯ -->
+        <div class="about__text about__text--mission">
+          <h3 class="about__title">Наша миссия</h3>
+          <p class="about__paragraph--mission">Помогаем безопасно зарабатывать деньги</p>
+        </div>
+
+        <!-- СТАТИСТИКА -->
+        <div class="about__stats">
+          <div class="about__stat"><strong class="about__stat-value">>20</strong><span class="about__stat-label">лет успешной работы</span></div>
+          <div class="about__stat"><strong class="about__stat-value">>2000</strong><span class="about__stat-label">довольных клиентов</span></div>
+          <div class="about__stat"><strong class="about__stat-value">>1000</strong><span class="about__stat-label">документов в день</span></div>
+          <div class="about__stat"><strong class="about__stat-value">>15 млрд</strong><span class="about__stat-label">рублей заработали клиенты</span></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
   </main>
 
   <script src="./js/menu.js" defer></script>
+  <script src="./js/lazyVideoLoading.js" defer></script>
 </body>
 </html>
 
 <script>
+  // плавное появление чисто для description__content
    document.addEventListener("DOMContentLoaded", () => {
       const section = document.querySelector('.description__content');
 
@@ -88,6 +166,23 @@
 
       observer.observe(section);
     });
+
+    // плавное появление для всех остальных блоков
+  window.addEventListener("load", () => {
+  const sections = document.querySelectorAll("main section");
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  sections.forEach(section => observer.observe(section));
+});
+
 
     // мягкая прокрутка потом понадобиться
     document.querySelector('.scroll-button').addEventListener('click', function (e) {
