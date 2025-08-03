@@ -1,0 +1,23 @@
+{
+  "name": "test-side",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YudinArtem90/test-side.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YudinArtem90/test-side/issues"
+  },
+  "homepage": "https://github.com/YudinArtem90/test-side#readme",
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  }
+}
