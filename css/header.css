@@ -1,5 +1,5 @@
 .site-header {
-  background-color: #0A03AA;
+  background-color: #0a03aa;
   color: white;
   height: 56px;
   padding: 10px 64px;
@@ -101,16 +101,16 @@
 }
 
 .site-header__separator {
-    height: 1px;
-    width: calc(100% - 60px);
-    background-color: rgb(241 231 231);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: flex;
-    justify-self: anchor-center;
-    animation: fadeIn 0.3s ease forwards;
-    display: none;
+  height: 1px;
+  width: calc(100% - 60px);
+  background-color: rgb(241 231 231);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  justify-self: anchor-center;
+  animation: fadeIn 0.3s ease forwards;
+  display: none;
 }
 
 .site-header__separator--visible {
@@ -140,7 +140,7 @@
     top: 100%;
     left: 0;
     right: 0;
-    background-color: #0A03AA;
+    background-color: #0a03aa;
     animation: fadeIn 0.3s ease forwards;
   }
 
