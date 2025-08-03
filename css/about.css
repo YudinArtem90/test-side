@@ -113,24 +113,29 @@
 .about__media--video {
   grid-area: video;
 }
+
 .about__media--image {
   grid-area: image;
 }
+
 .about__text--who {
   grid-area: who;
 }
+
 .about__text--experience {
   grid-area: experience;
 }
+
 .about__text--mission {
   grid-area: mission;
   text-align: center;
   width: max-content;
 }
+
 .about__stats {
   grid-area: stats;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   text-align: center;
 }
@@ -186,14 +191,26 @@
   margin-top: 30px;
 }
 
+.about__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .about__stat-value {
-  font-size: 22px;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   color: #007bff;
 }
 
 .about__stat-label {
-  font-size: 14px;
-  color: #444;
+  color: #0a00fa;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 @media (max-width: 1020px) {
@@ -224,10 +241,6 @@
     max-width: 354px;
   }
 
-  .about__media {
-    max-width: 304px;
-  }
-
   .about__paragraph--mission {
     margin-top: 10px;
   }
@@ -235,9 +248,13 @@
   .about {
     padding: 80px 40px;
   }
+
+  .about__stats {
+    grid-template-columns: repeat(auto-fit, minmax(157px, 1fr));
+  }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 790px) {
   .about__grid {
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -249,8 +266,12 @@
       'stats';
   }
 
-  .about__stats {
-    grid-template-columns: repeat(2, 1fr);
+  .about__stat-value {
+    font-size: 36px;
+  }
+
+  .about__stat-label {
+    font-size: 16px;
   }
 
   .about__paragraph {
@@ -259,5 +280,13 @@
 
   .about {
     padding: 30px 20px;
+  }
+
+  .about__media {
+    max-width: 440px;
+  }
+
+  .about__text--mission {
+    width: auto;
   }
 }
