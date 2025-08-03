@@ -254,7 +254,7 @@
   }
 }
 
-@media (max-width: 790px) {
+@media (max-width: 850px) {
   .about__grid {
     grid-template-columns: 1fr;
     grid-template-areas:
