@@ -1,0 +1,114 @@
+/** mobile-first */
+
+.advantages {
+  padding: 30px 20px;
+  background: #e9f4ff;
+}
+
+.advantages__container {
+  max-width: 1184px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.advantages__title {
+  color: #0a00fa;
+  text-align: center;
+  font-family: Unbounded;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.advantages__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(269px, 1fr));
+  gap: 30px;
+  align-items: stretch; /* все карточки одинаковой высоты */
+}
+
+.advantages__card {
+  border-radius: 16px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.advantages__card:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.advantages__image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.advantages__card-content {
+  flex-grow: 1; /* текст тянет карточку по высоте */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  color: #505672;
+}
+
+.advantages__card-title {
+  /* color:  #505672; */
+  font-family: Unbounded;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+
+.advantages__card-text {
+  font-family: Onest;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+@media (min-width: 480px) {
+}
+
+/* для экранов от 768px */
+@media (min-width: 768px) {
+  .advantages {
+    padding: 60px 40px;
+  }
+}
+
+/* для экранов от 1921px */
+@media (min-width: 1024px) {
+  .advantages {
+    padding: 80px 40px;
+  }
+
+  .advantages__title {
+    font-size: 42px;
+    margin-bottom: 60px;
+  }
+
+  .advantages__card-title {
+    font-size: 22px;
+  }
+  .advantages__card-text {
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+
+/* для экранов от 1921px */
+@media (min-width: 1920px) {
+}
