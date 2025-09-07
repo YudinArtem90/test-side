@@ -12,8 +12,8 @@
 /* Фон по умолчанию (Desktop >= 1025px) */
 .description {
   background-image: image-set(
-    url('../image/background/background-1920.webp') type('image/webp'),
-    url('../image/background/background-1920.png') type('image/png')
+    url('../images/background/background-1920.webp') type('image/webp'),
+    url('../images/background/background-1920.png') type('image/png')
   );
   height: 1080px;
 }
@@ -21,8 +21,8 @@
 @media (max-width: 1024px) {
   .description {
     background-image: image-set(
-      url('../image/background/background-768.webp') type('image/webp'),
-      url('../image/background/background-768.png') type('image/png')
+      url('../images/background/background-768.webp') type('image/webp'),
+      url('../images/background/background-768.png') type('image/png')
     );
     padding-top: 415px;
   }
@@ -31,8 +31,8 @@
 @media (max-width: 767px) {
   .description {
     background-image: image-set(
-      url('../image/background/background-480.webp') type('image/webp'),
-      url('../image/background/background-480.png') type('image/png')
+      url('../images/background/background-480.webp') type('image/webp'),
+      url('../images/background/background-480.png') type('image/png')
     );
     height: 952px;
   }

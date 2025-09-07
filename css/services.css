@@ -102,7 +102,7 @@
   align-self: flex-start;
   width: 40px;
   height: 25px;
-  background: url('../image/services/vector.png') no-repeat center;
+  background: url('../images/services/vector.png') no-repeat center;
   background-size: contain;
   border: none;
   cursor: pointer;
