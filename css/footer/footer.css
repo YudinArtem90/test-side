@@ -28,7 +28,7 @@
 }
 
 .footer__block--layout {
-  width: 100%;
+  width: max-content;
 }
 
 .footer__layout-grid {
