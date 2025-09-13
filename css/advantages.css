@@ -26,9 +26,9 @@
 
 .advantages__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(269px, 1fr));
-  gap: 30px;
-  align-items: stretch; /* все карточки одинаковой высоты */
+  grid-template-columns: repeat(auto-fit, 211px);
+  gap: 18px;
+  align-items: stretch;
 }
 
 .advantages__card {
@@ -46,10 +46,9 @@
 }
 
 .advantages__image {
-  width: 60px;
-  height: 60px;
+  width: 160px;
   object-fit: contain;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .advantages__card-content {
@@ -62,13 +61,15 @@
 }
 
 .advantages__card-title {
-  /* color:  #505672; */
   font-family: Unbounded;
   font-size: 16px;
   font-style: normal;
   font-weight: 900;
   line-height: 160%;
   text-transform: uppercase;
+  margin-bottom: 10px;
+  min-height: 52px;
+  text-align: initial;
 }
 
 .advantages__card-text {
@@ -77,6 +78,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+  text-align: initial;
 }
 
 @media (min-width: 480px) {
@@ -86,6 +88,10 @@
 @media (min-width: 768px) {
   .advantages {
     padding: 60px 40px;
+  }
+
+  .advantages__image {
+    width: 180px;
   }
 }
 
@@ -102,10 +108,24 @@
 
   .advantages__card-title {
     font-size: 22px;
+    margin-bottom: 15px;
+    min-height: 71px;
   }
   .advantages__card-text {
     font-size: 20px;
     line-height: 150%;
+  }
+
+  .advantages__grid {
+    grid-template-columns: repeat(3, 276px);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    row-gap: 60px;
+  }
+
+  .advantages__image {
+    width: 233px;
+    margin-bottom: 20px;
   }
 }
 
