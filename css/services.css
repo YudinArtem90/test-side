@@ -191,7 +191,7 @@
 
   .services__grid {
     margin: 40px auto;
-    grid-template-columns: repeat(auto-fit, 334px);
+    grid-template-columns: repeat(auto-fit, 326px);
   }
 
   .services__card-text {
@@ -218,7 +218,7 @@
   }
 
   .services__grid {
-    grid-template-columns: repeat(auto-fit, 210px);
+    grid-template-columns: repeat(auto-fit, 202px);
   }
 
   .services__card-title {
