@@ -95,8 +95,10 @@
   left: 49px;
 }
 
-.reviews__image:nth-child(1) {
-  display: none;
+.reviews__image--mobile {
+  display: block;
+  margin: auto;
+  position: static;
 }
 
 @media (max-width: 768px) {
@@ -107,7 +109,13 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
+  .reviews__image--desktop {
+    display: none;
+  }
+  .reviews__list {
+    margin-top: 60px;
+  }
   /* Убираем поведение columns — Flickity будет обрабатывать слайды */
   .reviews__list {
     column-count: unset;
@@ -123,7 +131,6 @@
   }
 }
 
-/* Mobile: 1 card wider */
 @media (max-width: 480px) {
   .reviews__card {
     width: 85%;
