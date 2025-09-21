@@ -173,7 +173,6 @@
   }
 }
 
-/* ========== АДАПТИВ ≤ 480px ========== */
 @media (max-width: 480px) {
   .site-header__logo-image {
     height: 32px;
