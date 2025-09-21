@@ -96,7 +96,7 @@
 }
 
 .reviews__image--mobile {
-  display: block;
+  display: none;
   margin: auto;
   position: static;
 }
@@ -112,6 +112,9 @@
 @media (max-width: 1440px) {
   .reviews__image--desktop {
     display: none;
+  }
+  .reviews__image--mobile {
+    display: block;
   }
   .reviews__list {
     margin-top: 60px;
