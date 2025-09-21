@@ -1,0 +1,211 @@
+.accounting-remotely {
+  padding: 80px 0;
+  background: #e9f4ff;
+}
+
+.accounting-remotely__container {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+}
+
+.accounting-remotely__title {
+  color: #0a00fa;
+  max-width: 923px;
+  margin: auto;
+  text-align: center;
+  font-family: Unbounded;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  max-width: 1280px;
+}
+
+/* Сетка */
+.accounting-remotely__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 20px;
+  margin: 60px auto 80px;
+  max-width: 1280px;
+}
+
+.accounting-remotely__item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.accounting-remotely__icon img {
+  width: 251px;
+  height: 203px;
+}
+
+.accounting-remotely__text {
+  color: #505672;
+  font-family: Onest;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* CTA */
+.accounting-remotely__cta {
+  position: relative;
+  text-align: center;
+  max-width: 1488px;
+  height: 436px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.accounting-remotely__cta-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.accounting-remotely__cta-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.accounting-remotely__cta-title {
+  color: #f8fbff;
+  text-align: center;
+  font-family: Unbounded;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  max-width: 812px;
+}
+
+.accounting-remotely__cta-button {
+  box-shadow:
+    0 76px 21px 0 rgba(6, 5, 66, 0.01),
+    0 49px 20px 0 rgba(6, 5, 66, 0.04),
+    0 27px 16px 0 rgba(6, 5, 66, 0.15),
+    0 12px 12px 0 rgba(6, 5, 66, 0.26),
+    0 3px 7px 0 rgba(6, 5, 66, 0.29);
+  border-radius: 20px;
+  border: 0 solid #fff;
+
+  background: #0a00fa;
+  width: 327px;
+  height: 66px;
+
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  font-family: Onest;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.accounting-remotely__cta-button:hover {
+  background: #0700c9;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .accounting-remotely__grid {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    gap: 40px 0;
+    margin: 40px auto 60px;
+    padding: 0 44px;
+  }
+
+  .accounting-remotely__item {
+    flex-direction: column;
+  }
+
+  .accounting-remotely {
+    padding: 60px 0;
+  }
+
+  .accounting-remotely__title {
+    font-size: 28px;
+    line-height: 120%;
+    letter-spacing: 1.4px;
+    max-width: 433px;
+  }
+
+  .accounting-remotely__icon img {
+    width: 120px;
+    height: 100px;
+  }
+  .accounting-remotely__text {
+    font-size: 16px;
+  }
+  .accounting-remotely__icon {
+    display: flex;
+    align-self: baseline;
+  }
+  .accounting-remotely__cta {
+    max-width: 570px;
+    height: 360px;
+  }
+  .accounting-remotely__cta-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .accounting-remotely__cta-bg img {
+    border-radius: 30px;
+  }
+  .accounting-remotely__cta-button {
+    width: 250px;
+    height: 50px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .accounting-remotely__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 20px auto 30px;
+    padding: 0 20px;
+  }
+
+  .accounting-remotely__item {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .accounting-remotely {
+    padding: 40px 0;
+  }
+  .accounting-remotely__item {
+    gap: 0;
+  }
+  .accounting-remotely__icon img {
+    width: 103px;
+    height: 80px;
+  }
+  .accounting-remotely__text {
+    font-size: 14px;
+  }
+  .accounting-remotely__cta {
+    max-width: 440px;
+    height: 295px;
+  }
+  .accounting-remotely__cta-title {
+    font-size: 28px;
+  }
+}
