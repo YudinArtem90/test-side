@@ -38,11 +38,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: box-shadow 0.3s ease;
-}
-
-.advantages__card:hover {
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .advantages__image {

@@ -99,41 +99,43 @@
             >
               <div class="about__circle-decor"></div>
               <div class="about__media-inner">
-                <picture>
-                  <source
-                    srcset="./images/about/about_video.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    src="./images/about/about_video.png"
-                    alt="Кто мы видео"
-                    class="about__media-thumb"
-                    loading="lazy"
-                  />
-                </picture>
-                <button class="about__media-play" aria-label="Смотреть видео">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="80"
-                    height="80"
-                    viewBox="0 0 176 176"
-                    fill="none"
-                  >
-                    <circle
-                      cx="88"
-                      cy="88"
-                      r="87.5"
-                      fill="white"
-                      fill-opacity="0.47"
-                      stroke="white"
+                <!-- <div class="about__media-poster"> -->
+                  <picture>
+                    <source
+                      srcset="./images/about/about_video.webp"
+                      type="image/webp"
                     />
-                    <path
-                      d="M59 155V28L154 86L59 155Z"
-                      fill="white"
-                      stroke="white"
+                    <img
+                      src="./images/about/about_video.png"
+                      alt="Кто мы видео"
+                      class="about__media-thumb"
+                      loading="lazy"
                     />
-                  </svg>
-                </button>
+                  </picture>
+                  <button class="about__media-play" aria-label="Смотреть видео">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 176 176"
+                      fill="none"
+                    >
+                      <circle
+                        cx="88"
+                        cy="88"
+                        r="87.5"
+                        fill="white"
+                        fill-opacity="0.47"
+                        stroke="white"
+                      />
+                      <path
+                        d="M59 155V28L154 86L59 155Z"
+                        fill="white"
+                        stroke="white"
+                      />
+                    </svg>
+                  </button>
+                <!-- </div> -->
               </div>
             </div>
 
@@ -477,7 +479,9 @@
 
       <section class="why">
         <div class="why__container">
-          <h2 class="why__title">ПОЧЕМУ СОТРУДНИЧЕСТВО С НАМИ - ЭТО ВЫГОДНО</h2>
+          <h2 class="why__title">
+            ПОЧЕМУ СОТРУДНИЧЕСТВО С НАМИ &mdash; ЭТО ВЫГОДНО
+          </h2>
         </div>
 
         <div class="why__image-wrapper">
