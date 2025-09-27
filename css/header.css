@@ -13,11 +13,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 45px;
+  height: 36px;
 }
 
 .site-header__logo-image {
-  height: 43px;
+  height: 36px;
   width: auto;
 }
 

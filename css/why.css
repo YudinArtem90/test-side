@@ -23,6 +23,7 @@
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  width: 400px;
 }
 
 .why__image-wrapper {
@@ -45,12 +46,16 @@
   .why {
     padding: 60px 0;
   }
+  .why__title {
+    width: 580px;
+  }
 }
 
 @media (min-width: 1920px) {
   .why__title {
     font-size: 42px;
     margin-bottom: 60px;
+    width: 810px;
   }
 
   .why__image-wrapper {

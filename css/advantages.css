@@ -29,6 +29,7 @@
   grid-template-columns: repeat(auto-fit, 211px);
   gap: 18px;
   align-items: stretch;
+  justify-content: center;
 }
 
 .advantages__card {
@@ -42,6 +43,7 @@
 
 .advantages__image {
   width: 160px;
+  height: 143px;
   object-fit: contain;
   margin-bottom: 22px;
 }
@@ -87,6 +89,7 @@
 
   .advantages__image {
     width: 180px;
+    height: 160px;
   }
 }
 
@@ -120,6 +123,7 @@
 
   .advantages__image {
     width: 233px;
+    height: 208px;
     margin-bottom: 20px;
   }
 }
