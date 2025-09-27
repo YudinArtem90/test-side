@@ -59,6 +59,11 @@
 
     <main>
       <section class="description">
+        <video class="description__video" autoplay muted loop playsinline>
+          <source src="./video/background.webm" type="video/webm" />
+          <source src="./video/background.mp4" type="video/mp4" />
+        </video>
+
         <div class="description__content">
           <div class="description__tagline">
             <div class="description__tagline-line-decor"></div>
@@ -100,41 +105,41 @@
               <div class="about__circle-decor"></div>
               <div class="about__media-inner">
                 <!-- <div class="about__media-poster"> -->
-                  <picture>
-                    <source
-                      srcset="./images/about/about_video.webp"
-                      type="image/webp"
+                <picture>
+                  <source
+                    srcset="./images/about/about_video.webp"
+                    type="image/webp"
+                  />
+                  <img
+                    src="./images/about/about_video.png"
+                    alt="Кто мы видео"
+                    class="about__media-thumb"
+                    loading="lazy"
+                  />
+                </picture>
+                <button class="about__media-play" aria-label="Смотреть видео">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="80"
+                    height="80"
+                    viewBox="0 0 176 176"
+                    fill="none"
+                  >
+                    <circle
+                      cx="88"
+                      cy="88"
+                      r="87.5"
+                      fill="white"
+                      fill-opacity="0.47"
+                      stroke="white"
                     />
-                    <img
-                      src="./images/about/about_video.png"
-                      alt="Кто мы видео"
-                      class="about__media-thumb"
-                      loading="lazy"
+                    <path
+                      d="M59 155V28L154 86L59 155Z"
+                      fill="white"
+                      stroke="white"
                     />
-                  </picture>
-                  <button class="about__media-play" aria-label="Смотреть видео">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="80"
-                      height="80"
-                      viewBox="0 0 176 176"
-                      fill="none"
-                    >
-                      <circle
-                        cx="88"
-                        cy="88"
-                        r="87.5"
-                        fill="white"
-                        fill-opacity="0.47"
-                        stroke="white"
-                      />
-                      <path
-                        d="M59 155V28L154 86L59 155Z"
-                        fill="white"
-                        stroke="white"
-                      />
-                    </svg>
-                  </button>
+                  </svg>
+                </button>
                 <!-- </div> -->
               </div>
             </div>
@@ -802,7 +807,7 @@
                     alt="Адрес"
                   />
                   <div class="footer__text-group">
-                    <p class="footer__text">АДРЕС</p>
+                    <p class="footer__text footer__text--label">АДРЕС</p>
                     <p class="footer__text">
                       г. Тамбов, Бульвар Строителей, д.6А, 4 этаж
                     </p>
@@ -815,7 +820,7 @@
                     alt="Телефон"
                   />
                   <div class="footer__text-group">
-                    <p class="footer__text">ТЕЛЕФОНЫ</p>
+                    <p class="footer__text footer__text--label">ТЕЛЕФОНЫ</p>
                     <p class="footer__text">
                       8 (960) 667-93-86, 8 (905) 048-72-49<br />8 (4752)
                       63-30-66
@@ -829,7 +834,9 @@
                     alt="Email"
                   />
                   <div class="footer__text-group">
-                    <p class="footer__text">ЭЛЕКТРОННАЯ ПОЧТА</p>
+                    <p class="footer__text footer__text--label">
+                      ЭЛЕКТРОННАЯ ПОЧТА
+                    </p>
                     <a href="mailto:office@bb1rf.ru" class="footer__link"
                       >office@bb1rf.ru</a
                     >

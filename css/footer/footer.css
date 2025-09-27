@@ -84,13 +84,20 @@
 .footer__link,
 .footer__text,
 .footer__heading {
-  font-size: 14px;
   color: #fff;
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 22px;
+}
+
+.footer__text--label{
+  font-weight: bold;
+}
+
+.footer__heading{
+  font-weight: bold;
 }
 
 .footer__link {
