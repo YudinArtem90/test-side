@@ -26,6 +26,12 @@
   width: 400px;
 }
 
+@media screen and (prefers-color-scheme: dark) {
+  .why__title {
+    color: #fff;
+  }
+}
+
 .why__image-wrapper {
   width: 440px;
   height: 267px;
