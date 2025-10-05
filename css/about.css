@@ -37,6 +37,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
 }
 
 .about__media-thumb {
@@ -211,6 +212,34 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.about__media-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 1;
+}
+
+.about__media-video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.about__media-video.active {
+  opacity: 1;
+}
+
+/* Плавное исчезновение картинки и кнопки */
+.about__media-inner--video img,
+.about__media-inner--video .about__media-play {
+  transition: opacity 0.4s ease;
 }
 
 @media (max-width: 1020px) {
