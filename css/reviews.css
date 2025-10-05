@@ -22,7 +22,6 @@
   position: relative;
 }
 
-/* Masonry через columns (Десктоп) */
 .reviews__list {
   column-count: 5;
   column-gap: 20px;
@@ -95,27 +94,7 @@
   left: 49px;
 }
 
-.reviews__image--mobile {
-  display: none;
-  margin: auto;
-  position: static;
-}
-
-@media (max-width: 768px) {
-  .reviews__image {
-    width: 194px;
-    height: 188px;
-    position: static;
-  }
-}
-
-@media (max-width: 1440px) {
-  .reviews__image--desktop {
-    display: none;
-  }
-  .reviews__image--mobile {
-    display: block;
-  }
+@media (max-width: 1522px) {
   .reviews__list {
     margin-top: 60px;
   }
@@ -136,7 +115,7 @@
 
 @media (max-width: 480px) {
   .reviews__card {
-    width: 85%;
+    width: 271px;
   }
   .reviews__footer {
     font-size: 14px;
@@ -144,10 +123,6 @@
 
   .reviews__link {
     font-size: 14px;
-  }
-
-  .reviews__image {
-    display: none;
   }
 }
 
