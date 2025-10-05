@@ -119,7 +119,6 @@
   display: block;
 }
 
-/* ========== АДАПТИВ ≤ 1185px ========== */
 @media (max-width: 1380px) {
   .site-header {
     padding: 10px 26px;
@@ -186,5 +185,11 @@
 
   .site-header__icons img {
     height: 20px;
+  }
+}
+
+@media (max-width: 344px) {
+  .site-header__icons img{
+    display: none;
   }
 }
