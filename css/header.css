@@ -192,4 +192,7 @@
   .site-header__icons img{
     display: none;
   }
+  .site-header{
+    padding: 10px 26px 10px 43px;
+  }
 }
