@@ -162,7 +162,7 @@
 }
 
 .about__title {
-  color: var(--blue-brand, #0a00fa);
+  color: #0a00fa;
   font-family: Unbounded;
   font-size: 42px;
   font-style: normal;
@@ -203,7 +203,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  color: #007bff;
+  color: #0a00fa;
 }
 
 .about__stat-label {
@@ -212,6 +212,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  text-align: left;
 }
 
 .about__media-video {
@@ -317,5 +318,22 @@
 
   .about__text--mission {
     width: auto;
+  }
+}
+
+@media (max-width: 344px) {
+  .about__title {
+    font-size: 24px;
+    letter-spacing: 1.2px;
+  }
+  .about__paragraph--mission {
+    font-size: 24px;
+    line-height: 121%;
+  }
+  .about__stat-value {
+    font-size: 30px;
+  }
+  .about__stats {
+    grid-template-columns: repeat(auto-fit, minmax(142px, 1fr));
   }
 }
