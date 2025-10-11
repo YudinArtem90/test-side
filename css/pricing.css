@@ -115,3 +115,17 @@
     padding: 20px 0;
   }
 }
+
+@media (min-width: 344px) {
+  .pricing__container {
+    max-width: 293px;
+  }
+  .pricing__title {
+    font-size: 22px;
+    letter-spacing: 1.1px;
+  }
+
+  .pricing__text {
+    line-height: 130%;
+  }
+}
