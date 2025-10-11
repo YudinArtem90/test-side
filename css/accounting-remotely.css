@@ -4,7 +4,6 @@
 }
 
 .accounting-remotely__container {
-  /* max-width: 1280px; */
   margin: 0 auto;
 }
 
@@ -22,7 +21,6 @@
   max-width: 1280px;
 }
 
-/* Сетка */
 .accounting-remotely__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -51,7 +49,6 @@
   line-height: 150%;
 }
 
-/* CTA */
 .accounting-remotely__cta {
   position: relative;
   text-align: center;
@@ -121,7 +118,6 @@
   background: #0700c9;
 }
 
-/* Tablet */
 @media (max-width: 1024px) {
   .accounting-remotely__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -164,6 +160,9 @@
   .accounting-remotely__cta-title {
     font-size: 28px;
     margin-bottom: 30px;
+    padding: 0px 45px;
+    line-height: 120%;
+    letter-spacing: 1.4px;
   }
   .accounting-remotely__cta-bg img {
     border-radius: 30px;
@@ -174,7 +173,6 @@
   }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
   .accounting-remotely__grid {
     grid-template-columns: 1fr;
@@ -207,5 +205,28 @@
   }
   .accounting-remotely__cta-title {
     font-size: 28px;
+  }
+}
+
+@media (max-width: 344px) {
+  .accounting-remotely__title {
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 1.1px;
+    max-width: 300px;
+  }
+
+  .accounting-remotely__icon img {
+    width: 95px;
+  }
+  .accounting-remotely__cta-bg img {
+    border-radius: 0;
+  }
+  .accounting-remotely__cta-title {
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: 1.1px;
+    max-width: 288px;
+    padding: 0;
   }
 }
