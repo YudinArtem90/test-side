@@ -336,4 +336,8 @@
   .about__stats {
     grid-template-columns: repeat(auto-fit, minmax(142px, 1fr));
   }
+  .about__circle-decor {
+    width: 310px;
+    height: 350px;
+  }
 }

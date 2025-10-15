@@ -116,7 +116,7 @@
   }
 }
 
-@media (min-width: 344px) {
+@media (max-width: 344px) {
   .pricing__container {
     max-width: 293px;
   }
