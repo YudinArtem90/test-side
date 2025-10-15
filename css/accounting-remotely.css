@@ -219,9 +219,11 @@
   .accounting-remotely__icon img {
     width: 95px;
   }
+  
   .accounting-remotely__cta-bg img {
     border-radius: 0;
   }
+
   .accounting-remotely__cta-title {
     font-size: 22px;
     line-height: 120%;
@@ -229,7 +231,8 @@
     max-width: 288px;
     padding: 0;
   }
+
   .accounting-remotely {
-    padding: 0;
+    padding: 30px 0 0;
   }
 }
