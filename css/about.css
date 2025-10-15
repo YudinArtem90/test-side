@@ -24,14 +24,14 @@
 .about__media {
   position: relative;
   overflow: visible;
-  border-radius: 16px;
+  border-radius: 40px;
   background: #fff;
   height: 100%;
 }
 
 .about__media-inner {
   position: relative;
-  border-radius: 16px;
+  border-radius: 40px;
   overflow: hidden;
   z-index: 1;
   height: 100%;
@@ -43,7 +43,7 @@
 .about__media-thumb {
   width: 100%;
   display: block;
-  border-radius: 16px;
+  border-radius: 40px;
   height: 100%;
   object-fit: cover;
 }
