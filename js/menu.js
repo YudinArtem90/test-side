@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+export function initMenu() {
   const burger = document.querySelector('.site-header__burger');
   const navIconsWrapper = document.querySelector('.site-header__nav-icons');
   const separator = document.querySelector('.site-header__separator');
@@ -27,4 +27,4 @@ document.addEventListener('DOMContentLoaded', () => {
       toggleMenu();
     }
   });
-});
+}
