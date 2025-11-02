@@ -1,0 +1,17 @@
+.button-back {
+  width: 33px;
+  height: 31px;
+  background-image: url('../../images/common/back_button.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .button-back {
+    margin-bottom: 30px;
+  }
+}
