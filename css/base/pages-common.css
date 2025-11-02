@@ -1,0 +1,41 @@
+.section-main {
+  max-width: 1180px;
+  min-width: 344px;
+  margin: 60px auto 80px;
+}
+
+.body {
+  background: #e9f4ff;
+}
+
+.title-page {
+  color: #0a00fa;
+  font-family: Unbounded;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .section-main {
+    margin: 20px auto 40px;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-main {
+    margin: 20px auto 40px;
+  }
+}
+
+@media (max-width: 344px) {
+}
