@@ -1,0 +1,114 @@
+@import '../common.css';
+@import '../header.css';
+@import '../footer/footer.css';
+@import '../base/pages-common.css';
+@import '../base/button-back.css';
+@import '../base/block-cards.css';
+
+.info-section{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 155px 80px 190px 0px 125px auto;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "image image title-page title-page"
+    "image image label label"
+    "image image details details"
+    "text-main text-main details details"
+    "text-main text-main details details"
+    "text-main text-main links links";
+}
+
+.info-section__text {
+font-size: 20px;
+font-style: normal;
+}
+
+.info-section__picture{
+  grid-area: image;
+}
+
+.info-section__img {
+  width: 545px;
+height: 355px;
+}
+
+.info-section__text--main {
+  grid-area: text-main;
+  border-left: thick solid #0A00FA;
+    padding-left: 41px;
+    width: 393px;
+    height: fit-content;
+    color: #0A00FA;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.info-section__text--label{
+  grid-area: label;
+  color:  #505672;
+font-weight: 700;
+line-height: 150%;
+}
+
+.info-section__text--details{
+  grid-area: details;
+  color: #505672;
+font-weight: 400;
+line-height: 150%;
+}
+
+.info-section__links{
+  grid-area: links;
+}
+
+.title-page {
+  grid-area: title-page;
+}
+
+.info-section__link-text{
+  color: #505672;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%;
+}
+
+.info-section__link{
+    display: flex;
+}
+
+@media (max-width: 1220px) {
+.info-section{
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows:  70px 65px 1fr 1fr 45px 1fr 1fr 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "title-page title-page title-page title-page"
+    "image image label label"
+    "image image . ."
+    "text-main  details details details"
+    "text-main  details details details"
+    ". links links links"
+    ". links links links";
+}
+}
+
+@media (max-width: 980px) {
+.info-section{
+  grid-template-columns: 1fr;
+  grid-template-rows:  repeat(7, auto );
+  grid-auto-flow: row;
+  grid-template-areas:
+    "title-page"
+    "image"
+    "label"
+    "details"
+    "text-main"
+    "links";
+}
+}
+
+@media (max-width: 344px) {}
