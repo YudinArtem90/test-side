@@ -51,78 +51,39 @@
           составлению и сдаче отчетности, т.к. у нас всё есть.
         </p>
 
-        <div class="info-section__links">
-          <div class="info-section__link">
-            <p class="info-section__link-text">
+        <div class="info-panel">
+          <div class="info-panel__link">
+            <p class="info-panel__link-text">
               В стоимость бухгалтерского обслуживания входит
             </p>
-            <button class="info-section__link-btn icon-button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-              >
-                <circle
-                  cx="10"
-                  cy="10"
-                  r="9"
-                  transform="rotate(-90 10 10)"
-                  stroke="#0A00FA"
-                  stroke-width="2"
-                />
-                <path d="M8 14L12 10L8 6" stroke="#0A00FA" stroke-width="2" />
-              </svg>
-            </button>
+            <button
+              class="info-panel__link-btn"
+              data-micromodal-trigger="modal-cost-of-services"
+              aria-label="Подробнее о стоимости"
+            ></button>
           </div>
-          <div class="info-section__link">
-            <p class="info-section__link-text">
+          <div class="info-panel__link">
+            <p class="info-panel__link-text">
               Основные критерии оценки стоимости бухгалтерского обслуживания
             </p>
-            <button class="info-section__link-btn icon-button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
-              >
-                <circle
-                  cx="10"
-                  cy="10"
-                  r="9"
-                  transform="rotate(-90 10 10)"
-                  stroke="#0A00FA"
-                  stroke-width="2"
-                />
-                <path d="M8 14L12 10L8 6" stroke="#0A00FA" stroke-width="2" />
-              </svg>
-            </button>
+            <button
+              class="info-panel__link-btn"
+              data-micromodal-trigger="modal-evaluation-criteria"
+              aria-label="Подробнее о критериях оценки"
+            ></button>
           </div>
-          <div class="info-section__link">
-            <p class="info-section__link-text">
-              Минимальная стоимость услуг <br />от 2 000 ₽
-            </p>
-            <button class="info-section__link-btn icon-button">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                fill="none"
+          <div class="info-panel__link">
+            <p class="info-panel__link-text">
+              <span class="info-panel__link-label"
+                >Минимальная стоимость услуг</span
               >
-                <circle
-                  cx="10"
-                  cy="10"
-                  r="9"
-                  transform="rotate(-90 10 10)"
-                  stroke="#0A00FA"
-                  stroke-width="2"
-                />
-                <path d="M8 14L12 10L8 6" stroke="#0A00FA" stroke-width="2" />
-              </svg>
-            </button>
+              <br /><span class="info-panel__link-price">от 2 000 ₽</span>
+            </p>
+            <button
+              class="info-panel__link-btn"
+              data-micromodal-trigger="modal-min-cost-of-services"
+              aria-label="Подробнее о минимальной стоимости услуг"
+            ></button>
           </div>
         </div>
       </section>
@@ -198,12 +159,320 @@
           </div>
         </div>
       </section>
+
+      <section class="block-button-link">
+        <button href="#contact" class="button-link">
+          Получить консультацию
+        </button>
+      </section>
     </main>
 
     <footer id="footer" class="footer"></footer>
 
+    <div
+      class="modal modal--service micromodal-slide"
+      id="modal-min-cost-of-services"
+      aria-hidden="true"
+    >
+      <div class="modal__overlay" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-min-cost-of-services-title"
+          tabindex="-1"
+        >
+          <header class="modal__header">
+            <img src="./svg/modal-logo.svg" alt="ББ№1" class="modal__logo" />
+            <button
+              class="modal__close-btn"
+              aria-label="Закрыть окно"
+              data-micromodal-close
+            ></button>
+          </header>
+
+          <div class="modal__content">
+            <h2 class="modal__title" id="modal-min-cost-of-services-title">
+              Минимальная стоимость бухгалтерского обслуживания
+            </h2>
+
+            <div class="modal__section">
+              <p class="modal__subtitle">Для ООО</p>
+              <ul class="modal__list">
+                <li class="modal__item">
+                  На упрощенной системе налогообложения: — доходы (6%) <br />—
+                  от 6000 ₽ в месяц — доходы минус расходы (15%)<br />—
+                  от 8000 ₽ в месяц
+                </li>
+                <li class="modal__item">
+                  На Едином сельскохозяйственном налоге — от 8000 ₽ в месяц
+                </li>
+                <li class="modal__item">
+                  На общей системе налогообложения — от 12 000 ₽ в месяц
+                </li>
+              </ul>
+            </div>
+
+            <div class="modal__section">
+              <p class="modal__subtitle">Для ИП</p>
+              <ul class="modal__list">
+                <li class="modal__item">
+                  На упрощенной системе налогообложения: <br />— доходы (6%) без
+                  наёмных сотрудников — от 2000 ₽ в месяц <br />— доходы (6%) с
+                  наёмными сотрудниками <br />— от 5000 ₽ в месяц— доходы минус
+                  Расходы (15%) — от 6000 ₽ в месяц
+                </li>
+                <li class="modal__item">
+                  Крестьянское фермерское хозяйство (КФХ) на Едином
+                  сельскохозяйственном налоге — от 6000 ₽ в месяц
+                </li>
+                <li class="modal__item">
+                  На общей системе налогообложения — от 10 000 ₽ в месяц
+                </li>
+                <li class="modal__item">
+                  На патентной системе налогообложения (на патенте): <br />— без
+                  наёмных сотрудников — от 2000 ₽ в месяц <br />— с наёмными
+                  сотрудниками — от 5000 ₽ в месяц
+                </li>
+              </ul>
+            </div>
+
+            <div class="modal__section">
+              <p class="modal__text">
+                Точная стоимость обслуживания определяется в каждом конкретном
+                случае после ознакомления со спецификой деятельности организации
+                и проведения комплексной оценки, включающей: <br />— анализ
+                документооборота компании <br />— ознакомление с налоговой
+                отчётностью за прошлые периоды и бухгалтерской базой данных в 1С
+                <br />— беседы с клиентом
+              </p>
+            </div>
+
+            <div class="modal__section">
+              <p class="modal__text">
+                Изучить компанию мы можем, выехав на место ведения бизнеса или
+                дистанционно с помощью удаленного доступа к 1С и видео- или
+                телефонного звонка через любой канал связи.
+              </p>
+            </div>
+
+            <div class="modal__section">
+              <p class="modal__text">
+                Поняв специфику и изучив потребности компании, мы сделаем
+                конкретное коммерческое предложение по стоимости обслуживания
+                бизнеса.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal modal--service micromodal-slide"
+      id="modal-evaluation-criteria"
+      aria-hidden="true"
+    >
+      <div class="modal__overlay" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-evaluation-criteria-title"
+          tabindex="-1"
+        >
+          <header class="modal__header">
+            <img src="./svg/modal-logo.svg" alt="ББ№1" class="modal__logo" />
+            <button
+              class="modal__close-btn"
+              aria-label="Закрыть окно"
+              data-micromodal-close
+            ></button>
+          </header>
+
+          <div class="modal__content">
+            <h2 class="modal__title" id="modal-evaluation-criteria-title">
+              Основные критерии оценки стоимости бухгалтерского обслуживания
+            </h2>
+
+            <div class="modal__section">
+              <p class="modal__subtitle">Система налогообложения</p>
+            </div>
+
+            <div class="modal__section">
+              <p class="modal__subtitle">Вид экономической деятельности</p>
+            </div>
+
+            <div class="modal__section">
+              <p class="modal__subtitle">Количество:</p>
+              <ul class="modal__list">
+                <li class="modal__item">обрабатываемых первичных документов</li>
+                <li class="modal__item">
+                  штатных сотрудников и уровень текучки кадров, наличие
+                  алиментщиков
+                </li>
+                <li class="modal__item">
+                  номенклатурных позиций, обсчитываемой товарной массы и
+                  материально-технических запасов
+                </li>
+              </ul>
+            </div>
+
+            <div class="modal__section">
+              <p class="modal__subtitle">Наличие/отсутствие:</p>
+              <ul class="modal__list">
+                <li class="modal__item">исполнительных производств</li>
+                <li class="modal__item">экспортно-импортных операций</li>
+                <li class="modal__item">
+                  возможности выгрузки/загрузки банковских выписок, электронных
+                  документов из управленческой базы в официальную базу
+                  бухгалтерии
+                </li>
+              </ul>
+            </div>
+
+            <div class="modal__section">
+              <p class="modal__subtitle">Необходимость:</p>
+              <ul class="modal__list">
+                <li class="modal__item">
+                  выполнения платежей с вашего расчётного счёта
+                </li>
+                <li class="modal__item">
+                  выписки исходящих первичных документов
+                </li>
+                <li class="modal__item">работы в оперативном режиме</li>
+              </ul>
+            </div>
+
+            <div class="modal__section">
+              <p class="modal__subtitle">Сопутствующие услуги:</p>
+              <ul class="modal__list">
+                <li class="modal__item">
+                  составление коммерческих предложений, писем, обращений,
+                  договоров, дополнительных соглашений, анкет, заявок
+                </li>
+                <li class="modal__item">
+                  осуществление и прием звонков от контрагентов
+                </li>
+                <li class="modal__item">сканирование и отправка документов</li>
+                <li class="modal__item">
+                  сбор и оформление пакета документов для банков, лизинговых
+                  компаний (для оформления кредитов, страховок, банковских
+                  гарантий и т. п.)
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- <footer class="modal__footer">
+        <button class="modal__btn" data-micromodal-close>Закрыть</button>
+      </footer> -->
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal modal--service micromodal-slide"
+      id="modal-cost-of-services"
+      aria-hidden="true"
+    >
+      <div class="modal__overlay" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-cost-of-services-title"
+          tabindex="-1"
+        >
+          <header class="modal__header">
+            <img src="./svg/modal-logo.svg" alt="ББ№1" class="modal__logo" />
+            <button
+              class="modal__close-btn"
+              aria-label="Закрыть окно"
+              data-micromodal-close
+            ></button>
+          </header>
+
+          <div class="modal__content">
+            <h2 class="modal__title" id="modal-cost-of-services-title">
+              В стоимость бухгалтерского обслуживания входит
+            </h2>
+
+            <div class="modal__section">
+              <p class="modal__subtitle">Ведение учёта:</p>
+              <ul class="modal__list">
+                <li class="modal__item">бухгалтерского</li>
+                <li class="modal__item">налогового</li>
+                <li class="modal__item">
+                  кадрового, в части начисления зарплат, отпускных, больничных,
+                  пособий, приказов по личному составу
+                </li>
+              </ul>
+            </div>
+
+            <div class="modal__section">
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <span>Составление и сдача текущей отчётности:</span>
+                  налоговой, в Социальный фонд и Росстат
+                </li>
+              </ul>
+            </div>
+
+            <div class="modal__section">
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <span>Ответы на требования и запросы</span> налоговой,
+                  Социального фонда, Росстата
+                </li>
+              </ul>
+            </div>
+            <div class="modal__section">
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <span>Представление интересов в госорганах</span> по вопросам
+                  ведения бухгалтерского учета, составления налоговой отчетности
+                </li>
+              </ul>
+            </div>
+            <div class="modal__section">
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <span
+                    >Ответы на запросы по предоставлению данных официального
+                    бухгалтерского учёта</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="modal__section">
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <span>Проверки актов сверок с контрагентами</span>
+                </li>
+              </ul>
+            </div>
+            <div class="modal__section">
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <span>Консультации</span> в области бухгалтерского учёта,
+                  налогообложения, права, финансовой и юридической безопасности,
+                  регистрации, реорганизации и ликвидации бизнеса, управления
+                  бизнесом, обеспечения деятельности бизнеса, маркетинга
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./js/loadPart.js" defer></script>
     <script src="./js/smoothAppearance.js" defer></script>
     <script src="./js/historyBack.js" defer></script>
+    <script
+      src="https://unpkg.com/micromodal/dist/micromodal.min.js"
+      defer
+    ></script>
+    <script src="./js/modal-init.js" defer></script>
   </body>
 </html>

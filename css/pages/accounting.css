@@ -4,63 +4,66 @@
 @import '../base/pages-common.css';
 @import '../base/button-back.css';
 @import '../base/block-cards.css';
+@import '../base/info-panel.css';
+@import '../base/modal.css';
+@import '../base/button-link.css';
 
-.info-section{
-    display: grid;
+.info-section {
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 155px 80px 190px 0px 125px auto;
   grid-auto-flow: row;
   grid-template-areas:
-    "image image title-page title-page"
-    "image image label label"
-    "image image details details"
-    "text-main text-main details details"
-    "text-main text-main details details"
-    "text-main text-main links links";
+    'image image title-page title-page'
+    'image image label label'
+    'image image details details'
+    'text-main text-main details details'
+    'text-main text-main details details'
+    'text-main text-main links links';
 }
 
 .info-section__text {
-font-size: 20px;
-font-style: normal;
+  font-size: 20px;
+  font-style: normal;
 }
 
-.info-section__picture{
+.info-section__picture {
   grid-area: image;
 }
 
 .info-section__img {
   width: 545px;
-height: 355px;
+  height: 355px;
 }
 
 .info-section__text--main {
   grid-area: text-main;
-  border-left: thick solid #0A00FA;
-    padding-left: 41px;
-    width: 393px;
-    height: fit-content;
-    color: #0A00FA;
-    font-weight: 400;
-    line-height: 150%;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  border-left: thick solid #0a00fa;
+  padding-left: 41px;
+  width: 393px;
+  height: fit-content;
+  color: #0a00fa;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-.info-section__text--label{
+.info-section__text--label {
   grid-area: label;
-  color:  #505672;
-font-weight: 700;
-line-height: 150%;
+  color: #505672;
+  font-weight: 700;
+  line-height: 150%;
 }
 
-.info-section__text--details{
+.info-section__text--details {
   grid-area: details;
   color: #505672;
-font-weight: 400;
-line-height: 150%;
+  font-weight: 400;
+  line-height: 150%;
 }
 
-.info-section__links{
+.info-panel {
   grid-area: links;
 }
 
@@ -68,47 +71,73 @@ line-height: 150%;
   grid-area: title-page;
 }
 
-.info-section__link-text{
-  color: #505672;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 150%;
-}
-
-.info-section__link{
-    display: flex;
+.block-button-link {
+  margin-top: 60px;
 }
 
 @media (max-width: 1220px) {
-.info-section{
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows:  70px 65px 1fr 1fr 45px 1fr 1fr 1fr;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "title-page title-page title-page title-page"
-    "image image label label"
-    "image image . ."
-    "text-main  details details details"
-    "text-main  details details details"
-    ". links links links"
-    ". links links links";
-}
+  .info-section {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 123px 20px 1fr 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      'title-page title-page title-page title-page'
+      'image image label label'
+      'image image . .'
+      'text-main  details details details'
+      '. links links links';
+  }
 }
 
 @media (max-width: 980px) {
-.info-section{
-  grid-template-columns: 1fr;
-  grid-template-rows:  repeat(7, auto );
-  grid-auto-flow: row;
-  grid-template-areas:
-    "title-page"
-    "image"
-    "label"
-    "details"
-    "text-main"
-    "links";
-}
+  .info-section {
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    grid-auto-flow: row;
+    grid-template-areas:
+      'title-page'
+      'image'
+      'label'
+      'details'
+      'text-main'
+      'links';
+  }
+
+  .block-button-link {
+    margin-top: 40px;
+  }
+
+  .info-section__img {
+    width: 420px;
+    height: 273px;
+  }
 }
 
-@media (max-width: 344px) {}
+@media (max-width: 768px) {
+  .info-section__text {
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  .info-section__text--main {
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    padding-left: 20px;
+    width: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-section__img {
+    width: 348px;
+    height: 232px;
+  }
+}
+
+@media (max-width: 344px) {
+  .info-section__img {
+    width: 270px;
+    height: 185px;
+  }
+}
