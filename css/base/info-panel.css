@@ -1,0 +1,53 @@
+.info-panel {
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+.info-panel__link-text {
+  color: #505672;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  width: 90%;
+}
+
+.info-panel__link {
+  display: flex;
+  align-items: center;
+}
+
+.info-panel__link-btn {
+  background-image: url('../../images/info-panel/button.png');
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+  cursor: pointer;
+}
+
+.info-panel__modal {
+}
+
+.info-panel__link-price {
+  font-size: 32px;
+}
+
+@media (max-width: 768px) {
+  .info-panel {
+    gap: 20px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-panel {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 344px) {
+}

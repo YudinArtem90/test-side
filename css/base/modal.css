@@ -1,0 +1,132 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal.is-open {
+  display: flex;
+}
+
+.modal__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__container {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  max-width: 768px;
+  width: 90%;
+  height: 90%;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2);
+  animation: modal-fade 0.3s ease forwards;
+  z-index: 2;
+  overflow-y: auto;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.modal__title {
+  color: #505672;
+  font-family: Unbounded;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 160%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.modal__close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  background-image: url('../../images/modal/button-close.png');
+  width: 48px;
+  height: 48px;
+}
+
+.modal__content {
+  margin-bottom: 20px;
+  color: #505672;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.modal__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal__item {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 10px;
+  color: #505672;
+  font-family: Onest;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.modal__item span {
+  font-weight: 700;
+  color: #505672;
+}
+
+.modal__item::before {
+  content: '•';
+  color: #0a00fa;
+  position: absolute;
+  left: 0;
+}
+
+.modal__section {
+  margin-bottom: 10px;
+}
+
+.modal__text {
+  color: #505672;
+  font-family: Onest;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.modal__subtitle {
+  color: #505672;
+  font-family: Onest;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 10px;
+}
+
+@keyframes modal-fade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

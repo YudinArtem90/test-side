@@ -1,0 +1,49 @@
+.main-info-text {
+}
+
+.main-info-text__heading {
+  color: #505672;
+  font-family: Unbounded;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+
+.main-info-text__text {
+  color: #505672;
+  font-family: Onest;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.main-info-text__strong {
+  color: #505672;
+  font-family: Onest;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.main-info-text__text--center {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .main-info-text__text {
+    font-size: 16px;
+  }
+  .main-info-text__strong {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+}
+
+@media (max-width: 344px) {
+}
