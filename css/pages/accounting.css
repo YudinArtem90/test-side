@@ -7,11 +7,34 @@
 @import '../base/info-panel.css';
 @import '../base/modal.css';
 @import '../base/button-link.css';
+@import '../base/main-info-text.css';
+
+.info-section__picture {
+  grid-area: image;
+}
+
+.info-section__label {
+  grid-area: label;
+}
+
+.info-section__main {
+  grid-area: text-main;
+}
+
+.info-section__details {
+  grid-area: details;
+}
+
+.info-section__links {
+  grid-area: links;
+}
 
 .info-section {
   display: grid;
+  row-gap: 35px;
+  column-gap: 30px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 155px 80px 190px 0px 125px auto;
+  grid-template-rows: repeat(6, auto);
   grid-auto-flow: row;
   grid-template-areas:
     'image image title-page title-page'
@@ -20,47 +43,12 @@
     'text-main text-main details details'
     'text-main text-main details details'
     'text-main text-main links links';
-}
-
-.info-section__text {
-  font-size: 20px;
-  font-style: normal;
-}
-
-.info-section__picture {
-  grid-area: image;
+  margin-bottom: 30px;
 }
 
 .info-section__img {
   width: 545px;
   height: 355px;
-}
-
-.info-section__text--main {
-  grid-area: text-main;
-  border-left: thick solid #0a00fa;
-  padding-left: 41px;
-  width: 393px;
-  height: fit-content;
-  color: #0a00fa;
-  font-weight: 400;
-  line-height: 150%;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.info-section__text--label {
-  grid-area: label;
-  color: #505672;
-  font-weight: 700;
-  line-height: 150%;
-}
-
-.info-section__text--details {
-  grid-area: details;
-  color: #505672;
-  font-weight: 400;
-  line-height: 150%;
 }
 
 .info-panel {
@@ -78,7 +66,8 @@
 @media (max-width: 1220px) {
   .info-section {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 123px 20px 1fr 1fr 1fr;
+    row-gap: 10px;
+    grid-template-rows: repeat(5, auto);
     grid-auto-flow: row;
     grid-template-areas:
       'title-page title-page title-page title-page'
@@ -87,9 +76,14 @@
       'text-main  details details details'
       '. links links links';
   }
+
+  .info-section__img {
+    width: 380px;
+    height: 250px;
+  }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 600px) {
   .info-section {
     gap: 20px;
     grid-template-columns: 1fr;
@@ -115,17 +109,6 @@
 }
 
 @media (max-width: 768px) {
-  .info-section__text {
-    font-size: 16px;
-    line-height: 150%;
-  }
-
-  .info-section__text--main {
-    font-size: 14px;
-    letter-spacing: 0.7px;
-    padding-left: 20px;
-    width: auto;
-  }
 }
 
 @media (max-width: 480px) {
