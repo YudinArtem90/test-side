@@ -1,0 +1,116 @@
+@import '../common.css';
+@import '../header.css';
+@import '../footer/footer.css';
+@import '../base/pages-common.css';
+@import '../base/button-back.css';
+@import '../base/block-cards.css';
+@import '../base/main-info-text.css';
+
+.agent-section {
+  display: grid;
+  row-gap: 60px;
+  column-gap: 30px;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(4, auto);
+  grid-auto-flow: row;
+  grid-template-areas:
+    'image title-page'
+    'image text-recommendation'
+    'text-conditions text-description'
+    'text-benefit text-benefit';
+}
+
+.agent-section__picture {
+  grid-area: image;
+}
+
+.info-panel {
+  grid-area: links;
+}
+
+.title-page {
+  grid-area: title-page;
+}
+
+.agent-section__text-recommendation {
+  grid-area: text-recommendation;
+}
+
+.agent-section__text-conditions {
+  grid-area: text-conditions;
+}
+
+.agent-section__text-description {
+  grid-area: text-description;
+}
+
+.agent-section__text-benefit {
+  grid-area: text-benefit;
+  width: 600px;
+  margin: auto;
+}
+
+.agent-section__img {
+  width: 545px;
+  height: 355px;
+}
+
+.agent-section__text-description .main-info-text__heading {
+  margin-bottom: 20px;
+}
+
+.agent-section__text-benefit .main-info-text__heading {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 965px) {
+  .agent-section {
+    row-gap: 30px;
+    column-gap: 20px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-auto-flow: row;
+    grid-template-areas:
+      'title-page title-page title-page title-page'
+      'image image text-recommendation text-recommendation'
+      'text-conditions text-description text-description text-description'
+      'text-benefit text-benefit text-benefit text-benefit';
+  }
+
+  .agent-section__img {
+    width: 420px;
+    height: 290px;
+  }
+
+  .agent-section__text-benefit {
+    width: 100%;
+  }
+}
+
+@media (max-width: 620px) {
+  .agent-section__img {
+    width: 348px;
+    height: 232px;
+  }
+
+  .agent-section {
+    row-gap: 15px;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-auto-flow: row;
+    grid-template-areas:
+      'title-page'
+      'image'
+      'text-recommendation'
+      'text-conditions'
+      'text-description'
+      'text-benefit';
+  }
+}
+
+@media (max-width: 400px) {
+  .agent-section__img {
+    width: 270px;
+    height: 185px;
+  }
+}
