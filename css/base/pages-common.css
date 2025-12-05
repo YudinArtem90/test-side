@@ -16,7 +16,6 @@
   font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
-  margin: 0 0 60px 0;
 }
 
 .section--bordered {
@@ -33,12 +32,9 @@
   padding: 0 0 60px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .section-main {
     margin: 20px 30px 40px;
-  }
-  .section--bordered {
-    padding: 0 0 30px 0;
   }
   .title-page {
     font-size: 28px;
@@ -48,13 +44,19 @@
   }
 }
 
+@media (max-width: 768px) {
+  .section--bordered {
+    padding: 0 0 30px 0;
+  }
+}
+
 @media (max-width: 480px) {
   .section-main {
     margin: 20px 20px 40px;
   }
 }
 
-@media (max-width: 344px) {
+@media (max-width: 400px) {
   .title-page {
     font-size: 24px;
     letter-spacing: 1.2px;
