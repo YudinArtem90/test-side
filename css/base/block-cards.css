@@ -28,7 +28,6 @@
   background: #f8fbff;
   box-shadow: 2px 2px 14px 5px rgba(80, 86, 114, 0.14);
   display: flex;
-  height: 246px;
   padding: 40px 25px 58px 25px;
   flex-direction: column;
   align-items: center;
@@ -36,21 +35,11 @@
   flex-basis: auto;
   max-width: 372px;
   min-width: 210px;
+  width: -webkit-fill-available;
 }
 
-.block-cards__card-text {
-  border-radius: 30px;
-  background: #f8fbff;
-  box-shadow: 2px 2px 14px 5px rgba(80, 86, 114, 0.14);
-  display: flex;
-  height: 200px;
-  padding: 40px 25px 58px 25px;
-  flex-direction: column;
-  align-items: center;
-  flex-basis: auto;
+.block-cards__card--text {
   max-width: 271px;
-  min-width: 208px;
-  width: -webkit-fill-available;
   justify-content: center;
 }
 
@@ -85,6 +74,24 @@
   height: 223px;
 }
 
+.block-cards .main-info-text__heading {
+  color: #505672;
+  text-align: center;
+  font-family: Onest;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+.block-cards .main-info-text__text {
+  color: #505672;
+  font-family: Onest;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
 @media (max-width: 768px) {
   .block-cards__title {
     margin: auto;
@@ -107,6 +114,12 @@
 @media (max-width: 480px) {
   .block-cards__title {
     letter-spacing: 1.1px;
+  }
+  .block-cards .main-info-text__heading {
+    font-size: 16px;
+  }
+  .block-cards .main-info-text__text {
+    font-size: 14px;
   }
 }
 

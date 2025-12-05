@@ -5,6 +5,7 @@
 @import '../base/button-back.css';
 @import '../base/block-cards.css';
 @import '../base/main-info-text.css';
+@import '../base/button-link.css';
 
 .agent-section {
   display: grid;
@@ -18,6 +19,7 @@
     'image text-recommendation'
     'text-conditions text-description'
     'text-benefit text-benefit';
+  margin-bottom: 60px;
 }
 
 .agent-section__picture {
@@ -75,6 +77,7 @@
       'image image text-recommendation text-recommendation'
       'text-conditions text-description text-description text-description'
       'text-benefit text-benefit text-benefit text-benefit';
+    margin-bottom: 30px;
   }
 
   .agent-section__img {

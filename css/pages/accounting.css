@@ -59,10 +59,6 @@
   grid-area: title-page;
 }
 
-.block-button-link {
-  margin-top: 60px;
-}
-
 @media (max-width: 1220px) {
   .info-section {
     grid-template-columns: repeat(4, 1fr);
@@ -96,10 +92,6 @@
       'details'
       'text-main'
       'links';
-  }
-
-  .block-button-link {
-    margin-top: 40px;
   }
 
   .info-section__img {
