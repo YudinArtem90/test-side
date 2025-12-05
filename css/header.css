@@ -188,7 +188,7 @@
   }
 }
 
-@media (max-width: 344px) {
+@media (max-width: 410px) {
   .site-header__icons img{
     display: none;
   }
