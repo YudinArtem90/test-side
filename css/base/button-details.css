@@ -1,0 +1,10 @@
+.button-details {
+  background-image: url('../../images/info-panel/button.png');
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+}

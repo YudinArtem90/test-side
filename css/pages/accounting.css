@@ -8,6 +8,7 @@
 @import '../base/modal.css';
 @import '../base/button-link.css';
 @import '../base/main-info-text.css';
+@import '../base/button-details.css';
 
 .info-section__picture {
   grid-area: image;
