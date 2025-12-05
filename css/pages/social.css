@@ -1,0 +1,78 @@
+@import '../common.css';
+@import '../header.css';
+@import '../footer/footer.css';
+@import '../base/pages-common.css';
+@import '../base/button-back.css';
+@import '../base/block-cards.css';
+@import '../base/main-info-text.css';
+
+.social {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    'img title-page'
+    'img label'
+    'img details';
+}
+
+.title-page {
+  grid-area: title-page;
+}
+
+.social__picture {
+  grid-area: img;
+}
+
+.social__label {
+  grid-area: label;
+}
+
+.social__details {
+  grid-area: details;
+}
+
+.social__img {
+  max-width: 504px;
+  min-width: 280px;
+}
+
+@media (max-width: 1090px) {
+  .social {
+    grid-template-areas:
+    'title-page title-page'
+    'img label'
+    'img details';
+    gap: 20px;
+  }
+
+  .social__img {
+    width: 333px;
+    height: 225px;
+  }
+}
+
+@media (max-width: 740px) {
+  .social {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      'title-page'
+      'img'
+      'label'
+      'details';
+    gap: 30px;
+  }
+
+  .social__img {
+    width: 420px;
+    height: 284px;
+  }
+}
+
+@media (max-width: 460px) {
+  .social__img {
+    width: 280px;
+    height: 205px;
+  }
+}
