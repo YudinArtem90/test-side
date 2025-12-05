@@ -1,0 +1,85 @@
+@import '../common.css';
+@import '../header.css';
+@import '../footer/footer.css';
+@import '../base/pages-common.css';
+@import '../base/button-back.css';
+@import '../base/block-cards.css';
+@import '../base/main-info-text.css';
+@import '../base/button-details.css';
+/* @import '../base/info-about-working-with-companies.css'; */
+
+.staff {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    'img title-page'
+    'img text';
+}
+
+.staff-info {
+  margin-top: 60px;
+}
+
+.staff__img {
+  max-width: 504px;
+  min-width: 280px;
+  height: 354px;
+}
+
+.title-page {
+  grid-area: title-page;
+}
+
+.staff__picture {
+  grid-area: img;
+}
+
+.main-info-text {
+  grid-area: text;
+}
+
+@media (max-width: 1035px) {
+  .staff {
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      'title-page title-page'
+      'img text';
+  }
+  .staff__img {
+    width: 333px;
+    height: 225px;
+  }
+}
+
+@media (max-width: 768px) {
+  .staff-info {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 700px) {
+  .staff {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      'title-page'
+      'img'
+      'text';
+    gap: 38px;
+    margin-bottom: 38px;
+  }
+
+  .staff__img {
+    width: 420px;
+    height: 296px;
+  }
+}
+
+@media (max-width: 460px) {
+  .staff__img {
+    width: 280px;
+    height: 205px;
+  }
+}
