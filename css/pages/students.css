@@ -5,6 +5,77 @@
 @import '../base/button-back.css';
 @import '../base/main-info-text.css';
 
-.practice-for-students{
-    
+.practice-for-students {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "cap-picture title-page"
+        "cap-picture label"
+        "real-experience learning-picture"
+        "student-picture employment-opportunity";
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.practice-for-students__cap-picture {
+    grid-area: cap-picture;
+}
+
+.title-page {
+    grid-area: title-page;
+}
+
+.info-section__label {
+    grid-area: label;
+}
+
+.practice-for-students__real-experience {
+    grid-area: real-experience;
+}
+
+.practice-for-students__learning-picture {
+    grid-area: learning-picture;
+}
+
+.practice-for-students__student-picture {
+    grid-area: student-picture;
+}
+
+.practice-for-students__employment-opportunity {
+    grid-area: employment-opportunity;
+}
+
+.practice-for-students__img{
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 965px) {
+  
+}
+
+@media (max-width: 768px) {
+ .practice-for-students {
+      grid-template-areas:
+        "title-page title-page"
+        "cap-picture label"
+        "real-experience learning-picture"
+        "student-picture employment-opportunity";
+  }
+}
+
+@media (max-width: 480px) {
+ .practice-for-students {
+  grid-template-columns: auto;
+    grid-template-rows: repeat(7, auto);
+      grid-template-areas:
+        "title-page"
+        "cap-picture"
+        "label"
+        "learning-picture"
+        "real-experience"
+        "student-picture"
+        "employment-opportunity";
+  }
 }
