@@ -132,6 +132,7 @@
 
 .description__contact-button {
   cursor: pointer;
+  text-decoration: none;
   margin: 66px 0 115px;
   transition:
     background 0.3s ease,
