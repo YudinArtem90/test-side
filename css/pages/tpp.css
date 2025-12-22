@@ -1,0 +1,79 @@
+@import '../common.css';
+@import '../header.css';
+@import '../footer/footer.css';
+@import '../base/pages-common.css';
+@import '../base/button-back.css';
+@import '../base/main-info-text.css';
+
+.membership {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    'cap-picture title-page'
+    'cap-picture history'
+    'committee-goals group-photo'
+    'lecture committee-tasks';
+  gap: 20px;
+}
+
+.membership__cap-picture {
+  grid-area: cap-picture;
+}
+
+.title-page {
+  grid-area: title-page;
+}
+
+.membership__history {
+  grid-area: history;
+}
+
+.membership__group-photo {
+  grid-area: group-photo;
+}
+
+.membership__committee-goals {
+  grid-area: committee-goals;
+}
+
+.membership__lecture {
+  grid-area: lecture;
+}
+
+.membership__committee-tasks {
+  grid-area: committee-tasks;
+}
+
+.membership__img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 965px) {
+}
+
+@media (max-width: 768px) {
+  .membership {
+    grid-template-areas:
+      'title-page title-page'
+      'cap-picture history'
+      'committee-goals group-photo'
+      'lecture committee-tasks';
+  }
+}
+
+@media (max-width: 480px) {
+  .membership {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+      'title-page'
+      'cap-picture'
+      'history'
+      'group-photo'
+      'committee-goals'
+      'lecture'
+      'committee-tasks';
+  }
+}
