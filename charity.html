@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бухгалтерское бюро №1</title>
+    <link rel="stylesheet" href="./css/pages/charity.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@400;700&family=Unbounded:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <header id="header" class="site-header"></header>
+
+    <main class="section-main">
+      <button class="button-back"></button>
+
+      <section class="charity">
+        <picture class="charity__tambov">
+          <source srcset="./images/charity/diploma2.webp" type="image/webp" />
+          <img
+            src="./images/charity/diploma2.png"
+            alt="диплом"
+            class="charity__img"
+            loading="lazy"
+          />
+        </picture>
+
+        <h1 class="title-page">
+          Благотворительная деятельность для социальных, некоммерческих
+          организаций
+        </h1>
+
+        <div class="charity__label main-info-text">
+          <p class="main-info-text__strong">
+            Бухгалтерское бюро №1 осознает важность оказания помощи тем, кто в
+            ней нуждается.
+          </p>
+          <br />
+          <p class="main-info-text__heading">Как получить помощь</p>
+          <br />
+          <p class="main-info-text__text">
+            Чтобы обратиться за помощью, напишите по электронной почте
+            office@bb1rf.ru письмо с темой «Просьба об оказании помощи»
+          </p>
+        </div>
+
+        <picture class="charity__penza">
+          <source srcset="./images/charity/diploma1.webp" type="image/webp" />
+          <img
+            src="./images/charity/diploma1.png"
+            alt="благодарность"
+            class="charity__img"
+            loading="lazy"
+          />
+        </picture>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer"></footer>
+
+    <script type="module" src="./js/loadPart.js" defer></script>
+    <script src="./js/smoothAppearance.js" defer></script>
+    <script src="./js/historyBack.js" defer></script>
+  </body>
+</html>

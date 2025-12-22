@@ -1,0 +1,64 @@
+@import '../common.css';
+@import '../header.css';
+@import '../footer/footer.css';
+@import '../base/pages-common.css';
+@import '../base/button-back.css';
+@import '../base/main-info-text.css';
+
+.charity {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    'title-page title-page'
+    'label label'
+    'charity-tambov charity-penza';
+  gap: 20px;
+}
+
+.charity__tambov {
+  grid-area: charity-tambov;
+}
+
+.title-page {
+  grid-area: title-page;
+}
+
+.charity__label {
+  grid-area: label;
+}
+
+.charity__penza {
+  grid-area: charity-penza;
+}
+
+.charity__img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 480px) {
+  .charity {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      'title-page'
+      'label'
+      'charity-penza'
+      'charity-tambov';
+  }
+
+  .charity__img {
+    max-width: 440px;
+    width: auto;
+    height: auto;
+  }
+}
+
+@media (max-width: 460px) {
+  .charity__label,
+  .title-page,
+  .charity__img {
+    width: 300px;
+  }
+}
