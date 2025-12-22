@@ -6,7 +6,6 @@ export function initMenu() {
   const toggleMenu = () => {
     navIconsWrapper.classList.toggle('active');
     burger.classList.toggle('is-active');
-    document.body.classList.toggle('no-scroll');
     separator.classList.toggle('site-header__separator--visible');
   };
 
