@@ -1,0 +1,86 @@
+@import '../common.css';
+@import '../header.css';
+@import '../footer/footer.css';
+@import '../base/pages-common.css';
+@import '../base/button-back.css';
+@import '../base/main-info-text.css';
+
+.into-practice {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(7, auto);
+  grid-template-areas:
+    'cap-picture title-page'
+    'cap-picture label'
+    'format learning-picture'
+    'student-picture topics'
+    'organization organization';
+  gap: 20px;
+}
+
+.into-practice__cap-picture {
+  grid-area: cap-picture;
+}
+
+.title-page {
+  grid-area: title-page;
+}
+
+.into-practice__label {
+  grid-area: label;
+}
+
+.into-practice__format {
+  grid-area: format;
+}
+
+.into-practice__learning-picture {
+  grid-area: learning-picture;
+}
+
+.into-practice__student-picture {
+  grid-area: student-picture;
+}
+
+.into-practice__topics {
+  grid-area: topics;
+}
+
+.into-practice__organization {
+  grid-area: organization;
+}
+
+.into-practice__img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 965px) {
+}
+
+@media (max-width: 768px) {
+  .into-practice {
+    grid-template-areas:
+      'title-page title-page'
+      'cap-picture label'
+      'format learning-picture'
+      'student-picture topics'
+      'organization organization';
+  }
+}
+
+@media (max-width: 480px) {
+  .into-practice {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:
+      'title-page'
+      'cap-picture'
+      'label'
+      'learning-picture'
+      'format'
+      'student-picture'
+      'topics'
+      'organization';
+  }
+}
