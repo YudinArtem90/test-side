@@ -91,9 +91,7 @@ li {
   }
 
   .associations-accounting-companies {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, auto);
     grid-template-areas:
       'title-page title-page title-page title-page'
       'cap-picture text-history text-history text-history'
@@ -113,7 +111,6 @@ li {
   }
 
   .associations-accounting-companies {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(7, auto);
     grid-template-areas:
