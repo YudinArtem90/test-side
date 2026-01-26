@@ -11,7 +11,8 @@
   text-transform: uppercase;
 }
 
-.main-info-text__text {
+.main-info-text__text,
+.main-info-text__list {
   color: #505672;
   font-family: Onest;
   font-size: 20px;
@@ -74,7 +75,8 @@
 }
 
 @media (max-width: 768px) {
-  .main-info-text__text {
+  .main-info-text__text,
+  .main-info-text__list {
     font-size: 16px;
   }
   .main-info-text__text--paragraph {
