@@ -1,0 +1,78 @@
+@import '../common.css';
+@import '../header.css';
+@import '../footer/footer.css';
+@import '../base/pages-common.css';
+@import '../base/button-back.css';
+@import '../base/main-info-text.css';
+
+.coworking {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas:
+    'title-page title-page'
+    'title-history title-history'
+    'history-the-first-steps-in-entrepreneurship the-first-start'
+    'history-gifts-to-the-winner the-first-start'
+    'group-photo gift-certificates';
+  row-gap: 20px;
+  column-gap: 40px;
+}
+
+.title-page {
+  grid-area: title-page;
+}
+
+.coworking__title-history {
+  grid-area: title-history;
+}
+
+.coworking__history-the-first-steps-in-entrepreneurship {
+  grid-area: history-the-first-steps-in-entrepreneurship;
+}
+
+.coworking__history-gifts-to-the-winner {
+  grid-area: history-gifts-to-the-winner;
+}
+
+.coworking__the-first-start {
+  grid-area: the-first-start;
+}
+
+.coworking__img {
+  width: 100%;
+}
+
+.coworking__gift-certificates {
+  grid-area: gift-certificates;
+}
+
+.coworking__group-photo {
+  grid-area: group-photo;
+}
+
+@media (max-width: 768px) {
+  .coworking {
+    grid-template-areas:
+      'title-page title-page'
+      'title-history title-history'
+      'group-photo history-the-first-steps-in-entrepreneurship'
+      'history-gifts-to-the-winner the-first-start'
+      'gift-certificates gift-certificates';
+  }
+}
+
+@media (max-width: 600px) {
+  .coworking {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      'title-page'
+      'title-history'
+      'group-photo'
+      'history-the-first-steps-in-entrepreneurship'
+      'history-gifts-to-the-winner'
+      'the-first-start'
+      'gift-certificates';
+  }
+}
