@@ -18,7 +18,9 @@
   text-transform: uppercase;
 }
 
-.section--bordered {
+.layout-section{}
+
+.layout-section--bordered {
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: auto 1px;
@@ -45,7 +47,7 @@
 }
 
 @media (max-width: 768px) {
-  .section--bordered {
+  .layout-section--bordered {
     padding: 0 0 30px 0;
   }
 }
