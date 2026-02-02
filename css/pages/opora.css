@@ -1,0 +1,147 @@
+@import '../common.css';
+@import '../header.css';
+@import '../footer/footer.css';
+@import '../base/pages-common.css';
+@import '../base/button-back.css';
+@import '../base/main-info-text.css';
+
+.opora-header {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    'icon-container icon-container title-page title-page title-page'
+    'history history info info info';
+  row-gap: 20px;
+  column-gap: 40px;
+}
+
+.title-page {
+  grid-area: title-page;
+}
+
+.opora-header__icon-container {
+  grid-area: icon-container;
+}
+
+.opora-header__history {
+  grid-area: history;
+}
+
+.opora-header__info {
+  grid-area: info;
+}
+
+.opora-header__icon {
+  width: 100%;
+}
+
+.committees {
+  display: flex;
+  flex-direction: column;
+}
+
+.committees__history {
+  margin: 60px auto;
+}
+
+.committees__group-photo-img {
+  width: 100%;
+}
+
+.committees__types {
+  display: flex;
+  gap: 100px;
+  margin: 80px 0;
+}
+
+.committees__taxes-and-budget,
+.committees__self-employment,
+.committees__sport {
+  width: 33.3%;
+}
+
+.committees__type-header {
+  margin: 40px 0 30px 0;
+}
+
+.certificate-of-membership {
+  display: flex;
+  gap: 30px;
+}
+
+.certificate-of-membership__img {
+  width: 100%;
+}
+
+@media (max-width: 880px) {
+  .opora-header {
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      'title-page title-page title-page title-page title-page'
+      'icon-container icon-container info info info'
+      'icon-container icon-container history history history';
+  }
+
+  .committees__history {
+    margin: 30px auto;
+  }
+
+  .committees__types {
+    gap: 21px;
+    margin: 30px 0;
+  }
+
+  .committees__type-header {
+    margin: 30px 0 20px 0;
+  }
+
+  .certificate-of-membership {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .opora-header {
+    grid-template-areas:
+      'title-page title-page title-page title-page title-page'
+      'icon-container icon-container info info info'
+      'history history history history history';
+  }
+
+  .committees__types {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .committees__taxes-and-budget,
+  .committees__self-employment,
+  .committees__sport {
+    width: 100%;
+  }
+
+  .committees__type-header {
+    margin: 10px 0;
+  }
+
+  .committees__type-icon {
+    margin: auto;
+    display: block;
+  }
+
+  .certificate-of-membership {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .opora-header {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      'title-page'
+      'icon-container'
+      'info'
+      'history';
+  }
+}
