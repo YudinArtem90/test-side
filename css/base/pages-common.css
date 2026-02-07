@@ -16,9 +16,12 @@
   font-weight: 900;
   line-height: normal;
   text-transform: uppercase;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
-.layout-section{}
+.layout-section {
+}
 
 .layout-section--bordered {
   background-position: bottom;

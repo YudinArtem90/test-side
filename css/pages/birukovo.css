@@ -1,0 +1,101 @@
+@import '../common.css';
+@import '../header.css';
+@import '../footer/footer.css';
+@import '../base/pages-common.css';
+@import '../base/button-back.css';
+@import '../base/block-cards.css';
+@import '../base/main-info-text.css';
+@import '../base/button-details.css';
+
+.birukovo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas:
+    'title-page title-page'
+    'history history'
+    'rules group-photo'
+    'prizes prizes';
+  column-gap: 32px;
+  row-gap: 60px;
+}
+
+.title-page {
+  grid-area: title-page;
+}
+
+.birukovo__history {
+  grid-area: history;
+}
+
+.birukovo__group-photo {
+  grid-area: group-photo;
+}
+
+.birukovo__rules {
+  grid-area: rules;
+}
+
+.birukovo__rules li {
+  margin: 12px 0;
+}
+
+.birukovo__prizes {
+  grid-area: prizes;
+}
+
+.birukovo__group-photo-img {
+  width: 100%;
+}
+
+.advantage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.advantage__item {
+  width: 170px;
+}
+
+.advantage__icon {
+  margin: 0 auto 20px;
+}
+
+@media (max-width: 900px) {
+  .birukovo {
+    column-gap: 20px;
+    row-gap: 30px;
+  }
+
+  .advantage {
+    margin-top: 30px;
+    gap: 30px;
+  }
+
+  .advantage__item {
+    width: 220px;
+  }
+
+  .advantage__icon {
+    display: flex;
+  }
+}
+
+@media (max-width: 660px) {
+  .birukovo {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      'title-page'
+      'history'
+      'group-photo'
+      'rules'
+      'prizes';
+  }
+
+  .advantage__item {
+    width: 100%;
+  }
+}
