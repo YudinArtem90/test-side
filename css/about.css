@@ -52,49 +52,18 @@
   height: 100%;
 }
 
-.about__media-play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 60px;
-  height: 60px;
-  background: rgba(0, 0, 0, 0.5)
-    url('data:image/svg+xml;utf8,<svg fill="white" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><polygon points="20,15 45,30 20,45"/></svg>')
-    no-repeat center;
-  background-size: 50%;
-  border: none;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  z-index: 2;
+.about__video {
+  height: 100%;
+  border-radius: 40px;
 }
 
-.about__gradient {
-  position: absolute;
-  width: 120px;
-  height: 120px;
-  pointer-events: none;
-  z-index: 0;
+.about__video .video__inner {
+  height: 100%;
 }
 
-.about__gradient--left {
-  top: -40px;
-  left: -40px;
-  background: radial-gradient(
-    circle at top left,
-    rgba(255, 255, 255, 0.8),
-    transparent
-  );
-}
-
-.about__gradient--right {
-  bottom: -40px;
-  right: -40px;
-  background: radial-gradient(
-    circle at bottom right,
-    rgba(255, 255, 255, 0.8),
-    transparent
-  );
+.about__video .video__thumb {
+  height: 100%;
+  object-fit: cover;
 }
 
 .about__circle-decor {
@@ -213,34 +182,6 @@
   font-weight: 400;
   line-height: normal;
   text-align: left;
-}
-
-.about__media-video {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 0.6s ease;
-  z-index: 1;
-}
-
-.about__media-video iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-.about__media-video.active {
-  opacity: 1;
-}
-
-/* Плавное исчезновение картинки и кнопки */
-.about__media-inner--video img,
-.about__media-inner--video .about__media-play {
-  transition: opacity 0.4s ease;
 }
 
 @media (max-width: 1020px) {

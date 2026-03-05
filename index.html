@@ -67,50 +67,53 @@
       <section class="about" id="about">
         <div class="about__container">
           <div class="about__grid">
-            <div
-              class="about__media about__media--video"
-              data-video="https://kinescope.io/embed/ari6YdQwTSwrfoMuhoyx8g"
-            >
+            <div class="about__media about__media--video">
               <div class="about__circle-decor"></div>
-              <div class="about__media-inner about__media-inner--video">
-                <picture>
-                  <source
-                    srcset="./images/about/about_video.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    src="./images/about/about_video.png"
-                    alt="Кто мы видео"
-                    class="about__media-thumb"
-                    loading="lazy"
-                  />
-                </picture>
-                <button class="about__media-play" aria-label="Смотреть видео">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="80"
-                    height="80"
-                    viewBox="0 0 176 176"
-                    fill="none"
-                  >
-                    <circle
-                      cx="88"
-                      cy="88"
-                      r="87.5"
-                      fill="white"
-                      fill-opacity="0.47"
-                      stroke="white"
+
+              <div
+                class="video about__video"
+                data-video="https://kinescope.io/embed/ari6YdQwTSwrfoMuhoyx8g"
+              >
+                <div class="video__inner">
+                  <picture>
+                    <source
+                      srcset="./images/about/about_video.webp"
+                      type="image/webp"
                     />
-                    <path
-                      d="M59 155V28L154 86L59 155Z"
-                      fill="white"
-                      stroke="white"
+                    <img
+                      src="./images/about/about_video.png"
+                      alt="Кто мы видео"
+                      class="video__thumb"
+                      loading="lazy"
                     />
-                  </svg>
-                </button>
+                  </picture>
+
+                  <button class="video__play" aria-label="Смотреть видео">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="80"
+                      height="80"
+                      viewBox="0 0 176 176"
+                      fill="none"
+                    >
+                      <circle
+                        cx="88"
+                        cy="88"
+                        r="87.5"
+                        fill="white"
+                        fill-opacity="0.47"
+                        stroke="white"
+                      />
+                      <path
+                        d="M59 155V28L154 86L59 155Z"
+                        fill="white"
+                        stroke="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
               </div>
             </div>
-
             <div class="about__media about__media--image">
               <div class="about__circle-decor"></div>
               <div class="about__media-inner">
@@ -459,19 +462,49 @@
             ПОЧЕМУ СОТРУДНИЧЕСТВО С НАМИ &mdash; ЭТО ВЫГОДНО
           </h2>
         </div>
-
-        <div class="why__image-wrapper">
-          <picture>
-            <source
-              srcset="./images/why/comparison_table.webp"
-              type="image/webp"
-            />
-            <img
-              src="./images/why/comparison_table.jpg"
-              alt="Почему выгодно сотрудничество"
-              class="why__image"
-            />
-          </picture>
+        <div class="why__media">
+          <div
+            class="video"
+            data-video="https://kinescope.io/embed/mDwrdMSenHjTE5GdEGCT85"
+          >
+            <div class="video__inner">
+              <picture>
+                <source
+                  srcset="./images/why/comparison_table.webp"
+                  type="image/webp"
+                />
+                <img
+                  src="./images/why/comparison_table.jpg"
+                  alt="Почему выгодно сотрудничество"
+                  class="video__thumb"
+                  loading="lazy"
+                />
+              </picture>
+              <button class="video__play" aria-label="Смотреть видео">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="80"
+                  height="80"
+                  viewBox="0 0 176 176"
+                  fill="none"
+                >
+                  <circle
+                    cx="88"
+                    cy="88"
+                    r="87.5"
+                    fill="white"
+                    fill-opacity="0.47"
+                    stroke="white"
+                  />
+                  <path
+                    d="M59 155V28L154 86L59 155Z"
+                    fill="white"
+                    stroke="white"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
