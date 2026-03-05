@@ -6,7 +6,7 @@
 @import '../base/block-cards.css';
 @import '../base/main-info-text.css';
 @import '../base/button-details.css';
-/* @import '../base/info-about-working-with-companies.css'; */
+@import '../base/modal.css';
 
 .staff {
   display: grid;

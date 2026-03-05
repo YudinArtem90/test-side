@@ -87,7 +87,7 @@
               </div>
               <button
                 class="button-details"
-                data-micromodal-trigger="modal-cost-of-services"
+                data-micromodal-trigger="modal-student"
                 aria-label=""
               ></button>
             </div>
@@ -157,7 +157,7 @@
               </div>
               <button
                 class="button-details"
-                data-micromodal-trigger="modal-cost-of-services"
+                data-micromodal-trigger="modal-practical-experience"
                 aria-label=""
               ></button>
             </div>
@@ -311,8 +311,94 @@
 
     <footer id="footer" class="footer"></footer>
 
+    <div
+      class="modal modal--service micromodal-slide"
+      id="modal-student"
+      aria-hidden="true"
+    >
+      <div class="modal__overlay" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-student-title"
+          tabindex="-1"
+        >
+          <header class="modal__header">
+            <img src="./svg/modal-logo.svg" alt="ББ№1" class="modal__logo" />
+            <button
+              class="modal__close-btn"
+              aria-label="Закрыть окно"
+              data-micromodal-close
+            ></button>
+          </header>
+
+          <div class="modal__content">
+            <h2 class="modal__title" id="modal-student-title">
+              Если вы студент со специализацией «Бухгалтерский учёт»:
+            </h2>
+
+            <div class="modal__section">
+              <p class="modal__subtitle">Ведение учёта:</p>
+              <ul class="modal__list">
+                <li class="modal__item">Записаться на собеседование и успешно его пройти</li>
+                <li class="modal__item">Пройти у нас производственную практику от учебного заведения</li>
+                <li class="modal__item">Успешно пройти 3-месячную стажировку</li>
+                <li class="modal__item">Зачислиться в кадровый резерв</li>
+                <li class="modal__item">Получить от нас предложение войти в нашу структуру или трудоустроиться к одному из наших клиентов</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal modal--service micromodal-slide"
+      id="modal-practical-experience"
+      aria-hidden="true"
+    >
+      <div class="modal__overlay" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-practical-experience-title"
+          tabindex="-1"
+        >
+          <header class="modal__header">
+            <img src="./svg/modal-logo.svg" alt="ББ№1" class="modal__logo" />
+            <button
+              class="modal__close-btn"
+              aria-label="Закрыть окно"
+              data-micromodal-close
+            ></button>
+          </header>
+
+          <div class="modal__content">
+            <h2 class="modal__title" id="modal-practical-experience-title">
+              Если вы бухгалтер с практическим опытом:
+            </h2>
+
+            <div class="modal__section">
+              <ul class="modal__list">
+                <li class="modal__item">Записаться на собеседование и успешно его пройти</li>
+                <li class="modal__item">Зачислиться в кадровый резерв</li>
+                <li class="modal__item">Получить предложение трудоустроиться к одному из наших клиентов</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="./js/loadPart.js" defer></script>
     <script src="./js/smoothAppearance.js" defer></script>
     <script src="./js/historyBack.js" defer></script>
+    <script
+      src="https://unpkg.com/micromodal/dist/micromodal.min.js"
+      defer
+    ></script>
+    <script src="./js/modal-init.js" defer></script>
   </body>
 </html>
