@@ -6,6 +6,7 @@
 @import '../base/block-cards.css';
 @import '../base/main-info-text.css';
 @import '../base/button-link.css';
+@import '../base/modal.css';
 
 .support {
   display: grid;
@@ -50,6 +51,11 @@
 .support__picture-img {
   width: 100%;
   border-radius: 40px;
+}
+
+.main-info-text__link{
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {

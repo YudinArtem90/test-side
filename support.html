@@ -62,16 +62,13 @@
 
         <div class="support__text-description main-info-text">
           <p class="main-info-text__heading">Чем вам поможет менеджер</p>
-          <br>
+          <br />
           <ul class="main-info-text__list">
             <li>Подберет оптимальный банк и поможет открыть расчетный счет</li>
-
             <li>
               Оформит эквайринг, зарплатный проект и другие банковские услуги
             </li>
-
             <li>Купит и зарегистрирует кассовую технику</li>
-
             <li>
               Окажет содействие:
               <ul class="main-info-text__sublist">
@@ -79,7 +76,6 @@
                   в получении кредита для бизнеса на лучших условиях (подача
                   заявок, сбор и оформление пакета документов)
                 </li>
-
                 <li>
                   в оформлении лизинга автомобиля, спецтехники или оборудования
                   для бизнеса на лучших условиях. Соберем и оформим пакет
@@ -87,16 +83,17 @@
                 </li>
               </ul>
             </li>
-
             <li>
               Застрахует имущество вашего бизнеса, профессиональные или иные
               риски
             </li>
-
-            <li>
-              <a href="#" class="main-info-text__link">и прочее</a>
-            </li>
           </ul>
+          <a
+            class="main-info-text__link"
+            data-micromodal-trigger="modal-info-about-us"
+            aria-label="прочее"
+            >и прочее</a
+          >
         </div>
 
         <div class="support__text-benefit main-info-text">
@@ -274,9 +271,121 @@
     </main>
 
     <footer id="footer" class="footer"></footer>
-    
+
+    <div
+      class="modal modal--service micromodal-slide"
+      id="modal-info-about-us"
+      aria-hidden="true"
+    >
+      <div class="modal__overlay" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modal-cost-of-services-title"
+          tabindex="-1"
+        >
+          <header class="modal__header">
+            <img src="./svg/modal-logo.svg" alt="ББ№1" class="modal__logo" />
+            <button
+              class="modal__close-btn"
+              aria-label="Закрыть окно"
+              data-micromodal-close
+            ></button>
+          </header>
+
+          <div class="modal__content">
+            <h2 class="modal__title" id="modal-cost-of-services-title">
+              Что сделает для Вас наш специалист:
+            </h2>
+
+            <div class="modal__section">
+              <ul class="modal__list">
+                <li class="modal__item">
+                  Подберет для Вас оптимальный банк и откроет расчетный счет.
+                </li>
+                <li class="modal__item">
+                  Оформит эквайринг, зарплатный проект и другие необходимые
+                  банковские услуги.
+                </li>
+                <li class="modal__item">
+                  Купит и зарегистрирует кассовую технику.
+                </li>
+                <li class="modal__item">
+                  Будет содействовать в получении кредита для бизнеса на лучших
+                  условиях (подаст заявки, соберет и оформит пакет документов).
+                </li>
+                <li class="modal__item">
+                  Окажет содействие в оформлении лизинга автомобиля, спецтехники
+                  или оборудования для бизнеса на лучших условиях (подаст
+                  заявки, соберет и оформит пакет документов).
+                </li>
+                <li class="modal__item">
+                  Застрахует имущество Вашего бизнеса, профессиональные или иные
+                  риски.
+                </li>
+                <li class="modal__item">
+                  Оформит банковскую гарантию для участия в торгах.
+                  Подготовит документы для участия в торгах и тендерах (соберет
+                  и оформит).
+                </li>
+                <li class="modal__item">Закажет печати и штампы.</li>
+                <li class="modal__item">
+                  Найдет и закажет оборудование для бизнеса.
+                </li>
+                <li class="modal__item">
+                  Подберет и доставит компьютеры и оргтехнику.
+                </li>
+                <li class="modal__item">Подберет и закажет офисную мебель.</li>
+                <li class="modal__item">
+                  Изготовит рекламную продукцию (вывески, банеры, визитки,
+                  полиграфию и многое другое).
+                </li>
+                <li class="modal__item">
+                  Зарегистрирует Ваш бизнес в системах ФГИС Зерно, Меркурий,
+                  Честный знак и т.п. , промаркирует товар.
+                </li>
+                <li class="modal__item">
+                  Проведет инвентаризацию товарных остатков на торговой точке,
+                  материальных запасов на складах.
+                </li>
+                <li class="modal__item">
+                  Подберет и поможет приобрести подходящую систему учета 1С.
+                </li>
+                <li class="modal__item">
+                  Организует документооборот на Вашем предприятии.
+                </li>
+                <li class="modal__item">
+                  Будет вести управленческий учет Ваших
+                  бизнес-процессов, обрабатывать информацию
+                  и готовить аналитические данные.
+                </li>
+                <li class="modal__item">
+                  Обеспечит ведение документов по охране труда, поможет с
+                  оформлением специальной оценки условий труда.
+                </li>
+                <li class="modal__item">
+                  Найдет и закажет необходимую спецодежду и средства личной
+                  защиты.
+                </li>
+                <li class="modal__item">
+                  Найдет поставщиков и исполнителей под любую возникшую задачу в
+                  Вашем бизнесе.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="./js/loadPart.js" defer></script>
     <script src="./js/smoothAppearance.js" defer></script>
     <script src="./js/historyBack.js" defer></script>
+    <script
+      src="https://unpkg.com/micromodal/dist/micromodal.min.js"
+      defer
+    ></script>
+    <script src="./js/modal-init.js" defer></script>
   </body>
 </html>
