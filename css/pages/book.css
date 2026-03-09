@@ -8,18 +8,6 @@
   background: black;
 }
 
-.book {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
-}
-
-.book__content {
-  width: 100%;
-  max-width: 600px;
-}
-
 .book__title-picture {
   margin: 20px 0;
 }
@@ -29,11 +17,6 @@
   max-width: 390px;
   height: auto;
   margin: 32px 0 80px;
-}
-
-.book__media {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .book__cover-img {
@@ -46,28 +29,78 @@
   margin: 0;
 }
 
+.media-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.media-block__content {
+  flex: 1;
+}
+
+.media-block__media {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.history-of-writing-book__the_writer-img {
+  max-width: 878px;
+  width: 100%;
+  height: auto;
+}
+
+.history-of-writing-book__history {
+  border-bottom: 1px solid #0279bd;
+  border-top: 1px solid #0279bd;
+  padding: 60px 0;
+}
+
+@media (max-width: 1200px) {
+  .history-of-writing-book__history {
+    padding: 25px 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .history-of-writing-book__history {
+    border: 0;
+    padding: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .book__cover-img {
     max-width: 480px;
   }
+
   .book__title-img {
     max-width: 319px;
     margin: 32px 0 30px;
   }
+
+  .media-block {
+    gap: 30px;
+  }
 }
 
 @media (max-width: 640px) {
-  .book {
+  .media-block {
     flex-direction: column;
-    text-align: left;
   }
 
-  .book__media {
-    justify-content: center;
+  .media-block__media {
     order: 1;
   }
 
   .book__title-img {
     margin: 20px 0 30px;
+  }
+
+  .history-of-writing-book__history {
+    border-top: 1px solid #0279bd;
+    padding: 20px 0;
   }
 }
