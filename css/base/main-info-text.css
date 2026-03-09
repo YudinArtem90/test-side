@@ -1,8 +1,11 @@
 .main-info-text {
+  color: #505672;
+  font-family: Onest;
+  font-size: 20px;
+  line-height: 150%;
 }
 
 .main-info-text__heading {
-  color: #505672;
   font-family: Unbounded;
   font-size: 22px;
   font-style: normal;
@@ -13,21 +16,11 @@
 
 .main-info-text__text,
 .main-info-text__list {
-  color: #505672;
-  font-family: Onest;
-  font-size: 20px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 150%;
 }
 
 .main-info-text__strong {
-  color: #505672;
-  font-family: Onest;
-  font-size: 20px;
-  font-style: normal;
   font-weight: 700;
-  line-height: 150%;
 }
 
 .main-info-text__text--center {
@@ -66,6 +59,14 @@
   margin-bottom: 12px;
 }
 
+.main-info-text p + p {
+  margin-top: 20px;
+}
+
+.main-info-text--white {
+  color: #fff;
+}
+
 @media (max-width: 965px) {
   .main-info-text__text--paragraph {
     width: 170px;
@@ -75,15 +76,9 @@
   }
   .main-info-text__text--paragraph span {
     font-size: 18px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 160%;
   }
   .main-info-text__heading {
     font-size: 18px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 160%;
   }
 
   .main-info-text__list li {
@@ -103,6 +98,9 @@
   .main-info-text__strong {
     font-size: 16px;
   }
+  .main-info-text p + p {
+    margin-top: 16px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -111,6 +109,9 @@
   }
   .main-info-text__list li {
     margin-bottom: 8px;
+  }
+  .main-info-text p + p {
+    margin-top: 8px;
   }
 }
 
