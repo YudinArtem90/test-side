@@ -51,7 +51,7 @@
 .advantage {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 60px;
 }
 
@@ -61,6 +61,12 @@
 
 .advantage__icon {
   margin: 0 auto 20px;
+}
+
+@media (max-width: 930px) {
+  .advantage {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 900px) {
