@@ -1,0 +1,56 @@
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel__track {
+  width: 100%;
+}
+
+.carousel__slide {
+  display: inline-block;
+  width: 100%;
+}
+
+.carousel--reviews .carousel__slide {
+  break-inside: avoid;
+}
+
+@media (max-width: 1522px) {
+  .carousel--reviews .carousel__slide {
+    width: 300px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel--reviews .carousel__slide {
+    width: 271px;
+  }
+}
+
+/* Flickity buttons */
+
+.flickity-button {
+  background: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+  background-image: url('../svg/reviews__nav__button.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+
+.flickity-button.previous{
+  transform: rotate(180deg);
+}
+
+.flickity-button-icon{
+  opacity: 0;
+}

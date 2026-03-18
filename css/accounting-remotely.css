@@ -9,7 +9,6 @@
 
 .accounting-remotely__title {
   color: #0a00fa;
-  max-width: 923px;
   margin: auto;
   text-align: center;
   font-family: Unbounded;
@@ -50,14 +49,15 @@
 }
 
 .accounting-remotely__cta {
-  position: relative;
-  text-align: center;
+  width: 100%;
   max-width: 1488px;
   height: 436px;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  position: relative;
+  margin: 0 auto;
 }
 
 .accounting-remotely__cta-bg {
@@ -116,6 +116,12 @@
 
 .accounting-remotely__cta-button:hover {
   background: #0700c9;
+}
+
+.accounting-remotely__cta-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -219,7 +225,7 @@
   .accounting-remotely__icon img {
     width: 95px;
   }
-  
+
   .accounting-remotely__cta-bg img {
     border-radius: 0;
   }
