@@ -259,6 +259,10 @@
   .about__text--mission {
     width: auto;
   }
+
+  .about__video {
+    aspect-ratio: auto;
+  }
 }
 
 @media (max-width: 344px) {

@@ -1,4 +1,5 @@
 @import '../common.css';
+@import '../base/video.css';
 @import '../header.css';
 @import '../description.css';
 @import '../about.css';
@@ -9,5 +10,4 @@
 @import '../reviews.css';
 @import '../pricing.css';
 @import '../accounting-remotely.css';
-@import '../base/video.css';
 @import '../carousel.css';
