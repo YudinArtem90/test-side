@@ -13,5 +13,9 @@ async function loadPart(id, file, callback) {
   }
 }
 
-loadPart('header', '/header.html', initMenu);
-loadPart('footer', '/footer.html');
+const basePath = window.location.pathname.includes('/test-site/')
+  ? '/test-site'
+  : '';
+
+loadPart('header', `${basePath}/header.html`, initMenu);
+loadPart('footer', `${basePath}/footer.html`);
