@@ -13,8 +13,8 @@ async function loadPart(id, file, callback) {
   }
 }
 
-const basePath = window.location.pathname.includes('/test-site/')
-  ? '/test-site'
+const basePath = window.location.pathname.includes('/test-side/')
+  ? '/test-side'
   : '';
 
 loadPart('header', `${basePath}/header.html`, initMenu);
