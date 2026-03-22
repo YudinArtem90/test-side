@@ -13,5 +13,5 @@ async function loadPart(id, file, callback) {
   }
 }
 
-loadPart('header', '../header.html', initMenu);
-loadPart('footer', '../footer.html');
+loadPart('header', '/header.html', initMenu);
+loadPart('footer', '/footer.html');
