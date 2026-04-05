@@ -4,6 +4,12 @@
   margin: 60px auto 80px;
 }
 
+.section-main--book {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
 .body {
   background: #e9f4ff;
 }
@@ -52,6 +58,16 @@
 @media (max-width: 768px) {
   .layout-section--bordered {
     padding: 0 0 30px 0;
+  }
+
+  .section-main--book {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .section-main--book {
+    gap: 20px;
   }
 }
 

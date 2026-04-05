@@ -19,12 +19,6 @@
   margin: 32px 0 80px;
 }
 
-.book__cover-img {
-  width: 100%;
-  max-width: 576px;
-  height: auto;
-}
-
 .book__title-main {
   margin: 0;
 }
@@ -33,7 +27,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  gap: 32px;
+}
+
+.media-block--reverse {
+  flex-direction: row-reverse;
 }
 
 .media-block__content {
@@ -46,43 +44,180 @@
   justify-content: center;
 }
 
-.history-of-writing-book__the_writer-img {
-  max-width: 878px;
+.media-block__media img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
-.history-of-writing-book__history {
+.history-of-writing-book__history,
+.book-presentation__content {
   border-bottom: 1px solid #0279bd;
   border-top: 1px solid #0279bd;
   padding: 60px 0;
 }
 
+.using-book__item--line {
+  border-top: 1px solid #0279bd;
+}
+
+.slogan {
+  position: relative;
+}
+
+.slogan__bg {
+  position: relative;
+  width: 98vw;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slogan__img {
+  width: 100%;
+  height: 326px;
+  object-fit: cover;
+  display: block;
+}
+
+.slogan__content {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1180px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slogan__text {
+  color: #fff;
+  text-align: center;
+  font-family: Onest;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 41px;
+  text-transform: uppercase;
+}
+
+.story-text {
+  text-align: center;
+}
+
+.story-text__text {
+  color: #fff;
+  font-family: Onest;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.story-text__highlight {
+  color: var(--Blue-book, #0279bd);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.book-info__content {
+  margin: 100px auto;
+}
+
+.using-book__list {
+  list-style: none;
+  padding: 0;
+  margin: 37px 0 0;
+  list-style-type: none;
+}
+
+.using-book__item {
+  display: flex;
+  gap: 32px;
+  padding: 32px 0;
+}
+
+.using-book__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.using-book__item-title {
+  color: var(--Blue-book, #0279bd);
+  font-family: Onest;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+
 @media (max-width: 1200px) {
-  .history-of-writing-book__history {
+  .history-of-writing-book__history,
+  .book-presentation__content {
     padding: 25px 0;
+  }
+
+  .using-book__item--line {
+    padding: 20px 0;
+  }
+
+  .using-book__item-title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .using-book {
+    flex-direction: column;
   }
 }
 
 @media (max-width: 900px) {
-  .history-of-writing-book__history {
+  .history-of-writing-book__history,
+  .book-presentation__content {
     border: 0;
     padding: 0;
+  }
+
+  .story-text__text {
+    font-size: 16px;
+    line-height: 32px;
+  }
+
+  .story-text__highlight {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 960px) {
+  .slogan__img {
+    height: 130px;
+  }
+
+  .slogan__text {
+    font-size: 40px;
+    width: 350px;
+  }
+
+  .book-info__content {
+    margin: 88px auto;
   }
 }
 
 @media (max-width: 768px) {
-  .book__cover-img {
-    max-width: 480px;
-  }
-
   .book__title-img {
     max-width: 319px;
     margin: 32px 0 30px;
   }
 
   .media-block {
-    gap: 30px;
+    gap: 20px;
   }
 }
 
@@ -99,8 +234,46 @@
     margin: 20px 0 30px;
   }
 
-  .history-of-writing-book__history {
+  .history-of-writing-book__history,
+  .book-presentation__content {
     border-top: 1px solid #0279bd;
     padding: 20px 0;
+  }
+
+  .book-info__content {
+    margin: 32px auto;
+  }
+
+  .using-book__item {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .story-text__text {
+    font-size: 14px;
+    line-height: 29px;
+  }
+
+  .story-text__highlight {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .book-info__group--reverse-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .book-info__group--reverse-mobile .book-info__media {
+    order: 2;
+  }
+
+  .book-info__group--reverse-mobile .book-info__content {
+    order: 1;
+  }
+
+  .slogan__bg {
+    width: 95vw;
   }
 }
