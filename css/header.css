@@ -63,15 +63,42 @@
   align-items: center;
 }
 
-.site-header__email,
-.site-header__phone {
+.site-header__icon {
+  display: inline-block;
+  width: 24px;
   height: 24px;
-  width: auto;
+
+  background-color: #fff;
+  transition: background-color 0.3s;
+
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+
+  -webkit-mask-size: contain;
+  mask-size: contain;
+
+  -webkit-mask-position: center;
+  mask-position: center;
 }
 
-.site-header__phone {
-  display: none;
-  cursor: pointer;
+.site-header__icon:hover {
+  background-color: #00a3ff;
+}
+
+.site-header__icon--email {
+  mask-image: url('../svg/header/envelope.svg');
+}
+
+.site-header__icon--youtube {
+  mask-image: url('../svg/header/youtube.svg');
+}
+
+.site-header__icon--phone {
+  mask-image: url('../svg/header/phone.svg');
+}
+
+.site-header__icon--burger {
+  mask-image: url('../svg/header/burger.svg');
 }
 
 .site-header__burger {
@@ -84,18 +111,22 @@
   background: none;
   border: none;
   cursor: pointer;
+  color: #fff;
 }
 
 .site-header__burger span {
   height: 3px;
   width: 100%;
-  background: white;
   border-radius: 2px;
   display: block;
   transition: all 0.3s ease;
+  background: currentColor; 
 }
 
-/* Активация крестика */
+.site-header__burger:hover {
+  color: #00a3ff;
+}
+
 .site-header__burger.is-active span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -126,8 +157,8 @@
 }
 
 @media (max-width: 768px) {
-  .site-header__phone {
-    display: inline-flex;
+  .site-header__icon--youtube {
+    display: none;
   }
 }
 
@@ -197,6 +228,11 @@
 
   .site-header__icons img {
     height: 20px;
+  }
+
+  .site-header__icon--phone,
+  .site-header__icon--email {
+    display: none;
   }
 }
 
