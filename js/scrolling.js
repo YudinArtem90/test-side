@@ -1,22 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const links = document.querySelectorAll('a[href^="#"]');
+document.addEventListener('click', (e) => {
+  const link = e.target.closest('a[data-scroll], [data-scroll-to]');
+  if (!link) return;
 
-  links.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = link.getAttribute('href').substring(1);
-      const target = document.getElementsByClassName(targetId);
+  e.preventDefault();
 
-      if (target) {
-        const headerOffset = 56;
-        const elementPosition = target[0].getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.scrollY - headerOffset;
+  const targetId =
+    link.dataset.scrollTo || link.getAttribute('href')?.substring(1);
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth',
-        });
-      }
-    });
+  const target = document.getElementById(targetId);
+  if (!target) return;
+
+  const headerOffset = 56;
+  const offsetPosition =
+    target.getBoundingClientRect().top + window.scrollY - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth',
   });
 });
