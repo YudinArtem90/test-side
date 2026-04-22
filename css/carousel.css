@@ -47,10 +47,14 @@
   transition: opacity 0.2s ease;
 }
 
-.flickity-button.previous{
-  transform: rotate(180deg);
+.flickity-button.previous {
+  transform: translateY(-50%) rotate(180deg);
 }
 
-.flickity-button-icon{
+.flickity-button-icon {
   opacity: 0;
+}
+
+.flickity-button:hover {
+  background-image: url('../svg/reviews__nav__button-active.svg');
 }

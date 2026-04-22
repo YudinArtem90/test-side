@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             cellAlign: 'left',
             contain: true,
             pageDots: false,
-            prevNextButtons: window.innerWidth > 344,
+            // prevNextButtons: window.innerWidth > 344,
             wrapAround: true,
             draggable: true,
             groupCells: 1,
