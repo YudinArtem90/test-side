@@ -6,3 +6,7 @@
 @import '../base/block-cards.css';
 @import '../base/info-about-working-with-companies.css';
 @import '../base/main-info-text.css';
+@import '../base/button-link.css';
+@import '../base/info-panel.css';
+@import '../base/button-details.css';
+@import '../base/modal.css';

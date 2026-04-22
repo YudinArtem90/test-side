@@ -17,10 +17,13 @@
       <button class="button-back"></button>
 
       <section
-        class="info-about-working-with-companies info-about-working-with-companies--theme-registration layout-section layout-section--bordered"
+        class="registration info-about-working-with-companies info-about-working-with-companies--theme-registration layout-section layout-section--bordered"
       >
-        <h1 class="title-page">Регистрация ООО и ИП</h1>
-        <picture class="info-about-working-with-companies__picture">
+        <h1 class="registration__title title-page">Регистрация ООО и ИП</h1>
+        <picture
+          registration__picture
+          class="info-about-working-with-companies__picture"
+        >
           <source
             srcset="./images/registration/company-registration.webp"
             type="image/webp"
@@ -32,36 +35,74 @@
             loading="lazy"
           />
         </picture>
-        <div class="main-info-text main-info-text--left">
+        <div class="registration__block main-info-text main-info-text--left">
           <h2 class="main-info-text__heading">
             В стоимость услуг по регистрации ООО входит
           </h2>
-          <p class="main-info-text__text">
-            Разработка Устава, с которым в последствии будет удобно работать
-            Составление необходимых документов: — решения о создании или
-            протокола собрания учредителей — договора об учреждении (при
-            нескольких учредителях) — квитанции на оплату государственной
-            пошлины — документов для подтверждения юридического адреса Подборка
-            кодов видов экономической деятельности Подготовка полного пакета
-            документов, необходимых для регистрации Проверка по Единому
-            Государственному Реестру Юридических Лиц уникальности коммерческого
-            обозначения регистрируемого ООО Консультация для выбора оптимальной
-            системы налогообложения Помощь в выборе оптимального банка для
-            ведения бизнеса Рекомендация необходимых услуг для быстрого старта
-            вашего бизнеса Открытие расчетных счетов в любых банках
-          </p>
+          <ul class="main-info-text__list">
+            <li>
+              Разработка Устава, с которым в последствии будет удобно работать
+            </li>
+            <li>
+              Составление необходимых документов:— решения о создании или
+              протокола собрания учредителей— договора об учреждении (при
+              нескольких учредителях)— квитанции на оплату государственной
+              пошлины— документов для подтверждения юридического адреса
+            </li>
+            <li>Подборка кодов видов экономической деятельности</li>
+            <li>
+              Подготовка полного пакета документов, необходимых для регистрации
+            </li>
+            <li>
+              Проверка по Единому Государственному Реестру Юридических Лиц
+              уникальности коммерческого обозначения регистрируемого ООО
+            </li>
+            <li>Консультация для выбора оптимальной системы налогообложения</li>
+            <li>Помощь в выборе оптимального банка для ведения бизнеса</li>
+            <li>
+              Рекомендация необходимых услуг для быстрого старта вашего бизнеса
+            </li>
+            <li>Открытие расчетных счетов в любых банках</li>
+          </ul>
+          <div class="registration__panel info-panel">
+            <div class="registration__panel__link info-panel__link">
+              <p class="info-panel__link-text">
+                Способы подачи документов на государственную регистрацию ООО
+              </p>
+              <button
+                class="button-details"
+                data-micromodal-trigger="registration-of-a-limited-liability-company"
+                aria-label="Подробнее о регистрации"
+              ></button>
+            </div>
+          </div>
         </div>
-        <div class="main-info-text main-info-text--right">
+        <div class="registration__block main-info-text main-info-text--right">
           <h2 class="main-info-text__heading">
             В стоимость услуг по регистрации ИП входит
           </h2>
-          <p class="main-info-text__text">
-            Подборка кодов видов экономической деятельности Подготовка полного
-            пакета документов, необходимых для регистрации Составление квитанции
-            на оплату государственной пошлины Консультация для выбора
-            оптимальной системы налогообложения Помощь в выборе оптимального
-            банка для ведения бизнеса Открытие расчетных счетов в любых банках
-          </p>
+          <ul class="main-info-text__list">
+            <li>Подборка кодов видов экономической деятельности</li>
+            <li>
+              Подготовка полного пакета документов, необходимых для регистрации
+            </li>
+            <li>Составление квитанции на оплату государственной пошлины</li>
+            <li>Консультация для выбора оптимальной системы налогообложения</li>
+            <li>Помощь в выборе оптимального банка для ведения бизнеса</li>
+            <li>Открытие расчетных счетов в любых банках</li>
+          </ul>
+          <div class="registration__panel info-panel">
+            <div class="registration__panel__link info-panel__link">
+              <p class="info-panel__link-text">
+                Способы подачи документов на государственную регистрацию ИП
+              </p>
+              <button
+                class="button-details"
+                data-micromodal-trigger="registration-of-an-individual-entrepreneur"
+                aria-label="Подробнее о регистрации"
+              ></button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -251,12 +292,146 @@
           </div>
         </div>
       </section>
+
+      <section class="block-button-link">
+        <button data-scroll-to="footer" class="button-link">
+          Получить консультацию
+        </button>
+      </section>
     </main>
 
     <footer id="footer" class="footer"></footer>
 
+    <!-- modal -->
+    <div
+      class="modal modal--service micromodal-slide"
+      id="registration-of-a-limited-liability-company"
+      aria-hidden="true"
+    >
+      <div class="modal__overlay" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="registration-of-a-limited-liability-company-title"
+          tabindex="-1"
+        >
+          <header class="modal__header">
+            <img src="./svg/modal-logo.svg" alt="ББ№1" class="modal__logo" />
+            <button
+              class="modal__close-btn"
+              aria-label="Закрыть окно"
+              data-micromodal-close
+            ></button>
+          </header>
+
+          <div class="modal__content">
+            <h2
+              class="modal__title"
+              id="registration-of-a-limited-liability-company-title"
+            >
+              Способы подачи документов на государственную регистрацию ООО
+            </h2>
+
+            <div class="modal__section">
+              <p class="modal__subtitle">Личная</p>
+              <ul class="modal__list">
+                <li class="modal__item">
+                  В налоговую инспекцию по месту регистрации юридического лица.
+                  Госпошлина — 4000 ₽
+                </li>
+              </ul>
+            </div>
+
+            <div class="modal__section">
+              <p class="modal__subtitle">Дистанционная</p>
+              <ul class="modal__list">
+                <li class="modal__item">
+                  С помощью ключей электронной цифровой подписи (ЭЦП).
+                  Госпошлина не взимается, но необходимо приобрести ЭЦП примерно
+                  за 2000 ₽
+                </li>
+                <li class="modal__item">
+                  Через платформу банка-партнера с открытием расчетного счета
+                  в этом банке. Подходит для ООО с учредителем и директором
+                  в одном лице. Госпошлина не взимается, ЭЦП банк выпускает
+                  бесплатно
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal modal--service micromodal-slide"
+      id="registration-of-an-individual-entrepreneur"
+      aria-hidden="true"
+    >
+      <div class="modal__overlay" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="registration-of-an-individual-entrepreneur-title"
+          tabindex="-1"
+        >
+          <header class="modal__header">
+            <img src="./svg/modal-logo.svg" alt="ББ№1" class="modal__logo" />
+            <button
+              class="modal__close-btn"
+              aria-label="Закрыть окно"
+              data-micromodal-close
+            ></button>
+          </header>
+
+          <div class="modal__content">
+            <h2
+              class="modal__title"
+              id="registration-of-an-individual-entrepreneur-title"
+            >
+              Способы подачи документов на государственную регистрацию ИП
+            </h2>
+
+            <div class="modal__section">
+              <p class="modal__subtitle">Личная</p>
+              <ul class="modal__list">
+                <li class="modal__item">
+                  В налоговую инспекцию по месту регистрации юридического лица.
+                  Госпошлина — 800 ₽
+                </li>
+              </ul>
+            </div>
+
+            <div class="modal__section">
+              <p class="modal__subtitle">Дистанционная</p>
+              <ul class="modal__list">
+                <li class="modal__item">
+                  С помощью ключа электронной цифровой подписи (ЭЦП). Госпошлина
+                  не взимается, но необходимо приобрести ЭЦП приблизительно за
+                  2000 ₽
+                </li>
+                <li class="modal__item">
+                  Через платформу банка-партнера с открытием расчетного счета в
+                  этом банке. Госпошлина не взимается, ЭЦП банк выпускает
+                  бесплатно
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="./js/loadPart.js" defer></script>
     <script src="./js/smoothAppearance.js" defer></script>
     <script src="./js/historyBack.js" defer></script>
+    <script src="./js/scrolling.js" defer></script>
+    <script
+      src="https://unpkg.com/micromodal/dist/micromodal.min.js"
+      defer
+    ></script>
+    <script src="./js/modal-init.js" defer></script>
   </body>
 </html>

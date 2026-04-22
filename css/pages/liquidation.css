@@ -6,9 +6,10 @@
 @import '../base/block-cards.css';
 @import '../base/info-about-working-with-companies.css';
 @import '../base/main-info-text.css';
-@import '../base/button-details.css';
 @import '../base/modal.css';
 @import '../base/button-link.css';
+@import '../base/info-panel.css';
+@import '../base/button-details.css';
 
 .liquidation__panel__link {
   display: flex;
@@ -20,19 +21,4 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-}
-
-.liquidation__panel {
-  color: #505672;
-  font-family: Onest;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 150%;
-}
-
-@media (max-width: 480px) {
-  .liquidation__panel {
-    font-size: 16px;
-  }
 }
