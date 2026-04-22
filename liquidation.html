@@ -17,10 +17,33 @@
       <button class="button-back"></button>
 
       <section
-        class="info-about-working-with-companies info-about-working-with-companies--theme-liquidation layout-section layout-section--bordered"
+        class="liquidation info-about-working-with-companies info-about-working-with-companies--theme-liquidation layout-section layout-section--bordered"
       >
-        <h1 class="title-page">Ликвидация ООО или ИП</h1>
-        <picture class="info-about-working-with-companies__picture">
+        <h1 class="liquidation__title title-page">Ликвидация ООО или ИП</h1>
+        <div class="liquidation__intro main-info-text main-info-text--center">
+          <p class="main-info-text__text">
+            Процедура ликвидации ООО проходит в три этапа. Вам необходимо
+            определиться с кандидатурой ликвидатора (обычно эту функцию
+            юридически выполняет текущий директор).
+          </p>
+          <p class="main-info-text__text">
+            <span class="main-info-text__strong">Оплата процедуры</span>
+            ликвидации ООО может производиться поэтапно.
+          </p>
+          <p class="main-info-text__text">
+            <span class="main-info-text__strong"
+              >Срок добровольной ликвидации ООО —</span
+            >
+            от 5 месяцев в зависимости от вашей текущей ситуации.
+          </p>
+          <p class="main-info-text__text">
+            <span class="main-info-text__strong">Срок закрытия ИП —</span> от 1
+            недели в зависимости от вашей текущей ситуации.
+          </p>
+        </div>
+        <picture
+          class="liquidation__picture info-about-working-with-companies__picture"
+        >
           <source
             srcset="./images/liquidation/company-liquidation.webp"
             type="image/webp"
@@ -28,42 +51,73 @@
           <img
             src="./images/liquidation/company-liquidation.png"
             alt="Ликвидация ООО или ИП"
-            class="info-about-working-with-companies__img"
+            class="liquidation__img info-about-working-with-companies__img"
             loading="lazy"
           />
         </picture>
-        <div class="main-info-text main-info-text--center">
-          Процедура ликвидации ООО проходит в три этапа. Вам необходимо
-          определиться с кандидатурой ликвидатора (обычно эту функцию юридически
-          выполняет текущий директор). Оплата процедуры ликвидации ООО может
-          производиться поэтапно. Срок добровольной ликвидации ООО — от 5
-          месяцев в зависимости от вашей текущей ситуации. Срок закрытия ИП — от
-          1 недели в зависимости от вашей текущей ситуации.
-        </div>
-        <div class="main-info-text main-info-text--left">
+        <div class="liquidation__block main-info-text main-info-text--left">
           <h2 class="main-info-text__heading">
             В стоимость услуг по ликвидации ООО входит
           </h2>
-          <p class="main-info-text__text">
-            Подготовка всех документов, необходимых для проведения процедуры
-            ликвидации ООО на каждом этапе Сдача налоговой отчетности в процессе
-            процедуры ликвидации Проведение сверки с налоговой инспекцией на
-            предмет налоговой задолженности Организация публикации в «Вестнике
-            государственной регистрации» Организация публикации на сайте
-            Федресурс Дистанционная подача документов в налоговый орган с
-            помощью ключа на втором и третьем этапе ликвидации ООО Консультации
-            по процедуре ликвидации
-          </p>
+          <ul class="main-info-text__list">
+            <li>
+              Подготовка всех документов, необходимых для проведения процедуры
+              ликвидации ООО на каждом этапе
+            </li>
+            <li>Сдача налоговой отчетности в процессе процедуры ликвидации</li>
+            <li>
+              Проведение сверки с налоговой инспекцией на предмет налоговой
+              задолженности
+            </li>
+            <li>
+              Организация публикации в «Вестнике государственной регистрации»
+            </li>
+            <li>Организация публикации на сайте Федресурс</li>
+            <li>
+              Дистанционная подача документов в налоговый орган с помощью ключа
+              на втором и третьем этапе ликвидации ООО
+            </li>
+            <li>Консультации по процедуре ликвидации</li>
+          </ul>
+          <div class="liquidation__panel info-panel">
+            <div class="liquidation__panel__link info-panel__link">
+              <p class="info-panel__link-text">
+                Способы подачи документов на ликвидацию ООО
+              </p>
+              <button
+                class="button-details"
+                data-micromodal-trigger="liquidation-of-a-limited-liability-company"
+                aria-label="Подробнее о ликвидации"
+              ></button>
+            </div>
+          </div>
         </div>
-        <div class="main-info-text main-info-text--right">
+        <div class="liquidation__block main-info-text main-info-text--right">
           <h2 class="main-info-text__heading">
             В стоимость услуг по ликвидации ИП входит
           </h2>
-          <p class="main-info-text__text">
-            Подготовка полного пакета документов, необходимого для закрытия ИП
-            Сдача налоговой отчетности при закрытии ИП Дистанционная подача
-            документов в налоговый орган с помощью ключа ЭЦП
-          </p>
+          <ul class="main-info-text__list">
+            <li>
+              Подготовка полного пакета документов, необходимого для закрытия ИП
+            </li>
+            <li>Сдача налоговой отчетности при закрытии ИП</li>
+            <li>
+              Дистанционная подача документов в налоговый орган с помощью ключа
+              ЭЦП
+            </li>
+          </ul>
+          <div class="liquidation__panel info-panel">
+            <div class="liquidation__panel__link info-panel__link">
+              <p class="info-panel__link-text">
+                Способы подачи документов на ликвидацию ИП
+              </p>
+              <button
+                class="button-details"
+                data-micromodal-trigger="liquidation-of-an-individual-entrepreneur"
+                aria-label="Подробнее о ликвидации"
+              ></button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -144,12 +198,125 @@
           </div>
         </div>
       </section>
+
+      <section class="block-button-link">
+        <button data-scroll-to="footer" class="button-link">
+          Получить консультацию
+        </button>
+      </section>
     </main>
 
     <footer id="footer" class="footer"></footer>
 
+    <!-- modal -->
+    <div
+      class="modal modal--service micromodal-slide"
+      id="liquidation-of-a-limited-liability-company"
+      aria-hidden="true"
+    >
+      <div class="modal__overlay" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="liquidation-of-a-limited-liability-company-title"
+          tabindex="-1"
+        >
+          <header class="modal__header">
+            <img src="./svg/modal-logo.svg" alt="ББ№1" class="modal__logo" />
+            <button
+              class="modal__close-btn"
+              aria-label="Закрыть окно"
+              data-micromodal-close
+            ></button>
+          </header>
+
+          <div class="modal__content">
+            <h2
+              class="modal__title"
+              id="liquidation-of-a-limited-liability-company-title"
+            >
+              Способы подачи документов на ликвидацию ООО
+            </h2>
+
+            <div class="modal__section">
+              <ul class="modal__list">
+                <li class="modal__item">
+                  На первом этапе ликвидации ликвидатор лично подает в налоговую
+                  инспекцию по месту регистрации юридического лица нотариально
+                  заверенные документы. Услуги нотариуса оплачиваются
+                  дополнительно
+                </li>
+                <li class="modal__item">
+                  На втором и третьем этапах ликвидации мы дистанционно подаем
+                  пакет документов с помощью ключей электронной цифровой подписи
+                  (ЭЦП). Госпошлина не взимается, но ликвидатору необходимо
+                  лично получить ЭЦП в налоговом органе (если не получена
+                  ранее).
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal modal--service micromodal-slide"
+      id="liquidation-of-an-individual-entrepreneur"
+      aria-hidden="true"
+    >
+      <div class="modal__overlay" data-micromodal-close>
+        <div
+          class="modal__container"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="liquidation-of-an-individual-entrepreneur-title"
+          tabindex="-1"
+        >
+          <header class="modal__header">
+            <img src="./svg/modal-logo.svg" alt="ББ№1" class="modal__logo" />
+            <button
+              class="modal__close-btn"
+              aria-label="Закрыть окно"
+              data-micromodal-close
+            ></button>
+          </header>
+
+          <div class="modal__content">
+            <h2
+              class="modal__title"
+              id="liquidation-of-an-individual-entrepreneur-title"
+            >
+              Способы подачи документов на ликвидацию ИП
+            </h2>
+
+            <div class="modal__section">
+              <ul class="modal__list">
+                <li class="modal__item">
+                  Личная подача в налоговую инспекцию по месту жительства ИП.
+                  Госпошлина — 160 ₽
+                </li>
+                <li class="modal__item">
+                  Дистанционная с помощью ключа электронной цифровой подписи
+                  (ЭЦП). Госпошлина не взимается, но ИП необходимо лично
+                  получить ЭЦП в налоговом органе (если не получена ранее).
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="./js/loadPart.js" defer></script>
     <script src="./js/smoothAppearance.js" defer></script>
     <script src="./js/historyBack.js" defer></script>
+    <script
+      src="https://unpkg.com/micromodal/dist/micromodal.min.js"
+      defer
+    ></script>
+    <script src="./js/modal-init.js" defer></script>
+    <script src="./js/scrolling.js" defer></script>
   </body>
 </html>
