@@ -95,6 +95,7 @@
 
 .site-header__icon--phone {
   mask-image: url('../svg/header/phone.svg');
+  display: none;
 }
 
 .site-header__icon--burger {
@@ -157,8 +158,12 @@
 }
 
 @media (max-width: 768px) {
-  .site-header__icon--youtube {
+  /* .site-header__icon--youtube {
     display: none;
+  } */
+
+  .site-header__icon--phone {
+    display: inline-block;
   }
 }
 
@@ -230,9 +235,8 @@
     height: 20px;
   }
 
-  .site-header__icon--phone,
-  .site-header__icon--email {
-    display: none;
+  .site-header__icons {
+    gap: 30px;
   }
 }
 
@@ -242,5 +246,8 @@
   }
   .site-header {
     padding: 10px 26px 10px 43px;
+  }
+  .site-header__icons {
+    gap: 20px;
   }
 }
