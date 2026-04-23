@@ -120,7 +120,7 @@
   border-radius: 2px;
   display: block;
   transition: all 0.3s ease;
-  background: currentColor; 
+  background: currentColor;
 }
 
 .site-header__burger:hover {
@@ -162,7 +162,7 @@
   }
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1460px) {
   .site-header {
     padding: 10px 26px;
   }

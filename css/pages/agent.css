@@ -50,6 +50,7 @@
   grid-area: text-benefit;
   width: 600px;
   margin: auto;
+  text-align: center;
 }
 
 .agent-section__img {
