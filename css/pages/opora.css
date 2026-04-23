@@ -66,15 +66,70 @@
 }
 
 .certificate-of-membership {
-  display: flex;
+  display: grid;
+  grid-template-columns: 41% 58%;
   gap: 30px;
+}
+
+.certificate-of-membership__certificate,
+.certificate-of-membership__group-photo {
+  grid-column: span 1;
+}
+
+.certificate-of-membership__tax-photo {
+  grid-column: 1 / -1;
+  position: relative;
 }
 
 .certificate-of-membership__img {
   width: 100%;
+  display: block;
 }
 
-@media (max-width: 880px) {
+.certificate-of-membership__button {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  border-radius: 20px;
+  border: 0 solid #fff;
+  background: #0a00fa;
+  box-shadow: 0 60px 15px 0 rgba(6, 5, 66, 0.01);
+  display: flex;
+  width: 197px;
+  height: 39px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: Onest;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.certificate-of-membership__overlay {
+  position: absolute;
+
+  width: 640px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 27%;
+}
+
+@media (max-width: 1050px) {
+  .certificate-of-membership__button {
+    bottom: 25px;
+  }
+}
+
+@media (max-width: 870px) {
   .opora-header {
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
@@ -94,6 +149,24 @@
 
   .committees__type-header {
     margin: 30px 0 20px 0;
+  }
+
+  .certificate-of-membership {
+    gap: 20px;
+  }
+
+  .certificate-of-membership__button {
+    bottom: 15px;
+  }
+
+  .certificate-of-membership__overlay {
+    width: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .certificate-of-membership__overlay {
+    left: 21%;
   }
 
   .certificate-of-membership {
@@ -134,6 +207,20 @@
   }
 }
 
+@media (max-width: 720px) {
+  .certificate-of-membership {
+    grid-template-columns: 1fr;
+  }
+
+  .certificate-of-membership__tax-photo {
+    grid-column: auto;
+  }
+
+  .certificate-of-membership__overlay {
+    left: 9%;
+  }
+}
+
 @media (max-width: 400px) {
   .opora-header {
     grid-template-columns: 1fr;
@@ -143,5 +230,10 @@
       'icon-container'
       'info'
       'history';
+  }
+
+  .certificate-of-membership__overlay {
+    top: 12px;
+    left: 8%;
   }
 }
