@@ -110,6 +110,11 @@
   line-height: 150%;
 }
 
+.modal__text span {
+  font-weight: 700;
+  color: #505672;
+}
+
 .modal__subtitle {
   color: #505672;
   font-family: Onest;

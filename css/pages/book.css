@@ -3,6 +3,7 @@
 @import '../footer/footer.css';
 @import '../base/pages-common.css';
 @import '../base/main-info-text.css';
+@import '../base/modal.css';
 
 .body {
   background: black;
@@ -147,13 +148,92 @@
 }
 
 .using-book__item-title {
-  color: var(--Blue-book, #0279bd);
+  color: #0279bd;
   font-family: Onest;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 160%;
   text-transform: uppercase;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact__title {
+  margin-bottom: 50px;
+}
+
+.contact-form__row {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-form__row--columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-form__input {
+  width: 100%;
+  min-width: 0;
+  padding: 18px 20px;
+
+  border-radius: 10px;
+  border: 2px solid #0279bd;
+  background: black;
+
+  color: #0279bd;
+  font-family: Onest;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-form__button {
+  border-radius: 20px;
+  border: 0 solid #fff;
+  background: #0a00fa;
+  box-shadow:
+    0 76px 21px 0 rgba(6, 5, 66, 0.01),
+    0 49px 20px 0 rgba(6, 5, 66, 0.04),
+    0 27px 16px 0 rgba(6, 5, 66, 0.15),
+    0 12px 12px 0 rgba(6, 5, 66, 0.26),
+    0 3px 7px 0 rgba(6, 5, 66, 0.29);
+  display: flex;
+  width: 295px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  font-family: Onest;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: auto;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-form__button:hover {
+  opacity: 0.9;
+}
+
+.contact-form__result {
+  min-height: 20px;
+}
+
+@media (max-width: 768px) {
+  .contact-form__row--columns {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 1200px) {
